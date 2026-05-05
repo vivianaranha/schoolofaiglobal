@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10 Free AI Certifications | School of AI</title>
+  <meta name="description" content="10 free School of AI certifications with video lectures, hands-on labs, GitHub projects, and Certificates of Excellence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#07111f; --bg2:#0b1730; --card:#0f1d34; --text:#ecf6ff; --muted:#a7b6ce;
+      --line:rgba(255,255,255,.12); --cyan:#3de7ff; --blue:#2c7dff; --purple:#9b5cff; --green:#43e6a2;
+      --white:#ffffff; --shadow: 0 24px 80px rgba(0,0,0,.36);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at 20% 10%, rgba(61,231,255,.20), transparent 28%), radial-gradient(circle at 80% 10%, rgba(155,92,255,.22), transparent 30%), linear-gradient(180deg, #06101e 0%, #0a1324 52%, #050a12 100%); color:var(--text); }
+    a { color:inherit; text-decoration:none; }
+    .nav { position:sticky; top:0; z-index:50; backdrop-filter: blur(18px); background: rgba(5,10,18,.72); border-bottom:1px solid var(--line); }
+    .nav-inner { max-width:1180px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:14px 22px; gap:18px; }
+    .brand { font-weight:900; letter-spacing:.3px; display:flex; gap:10px; align-items:center; }
+    .logo { width:34px; height:34px; border-radius:10px; display:grid; place-items:center; background:linear-gradient(135deg,var(--cyan),var(--purple)); color:#03101d; font-weight:900; }
+    .nav-links { display:flex; gap:18px; color:var(--muted); font-weight:600; font-size:14px; }
+    .nav-links a:hover { color:var(--white); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:13px 20px; border-radius:999px; font-weight:800; background:linear-gradient(135deg,var(--cyan),var(--blue),var(--purple)); color:white; box-shadow:0 14px 35px rgba(44,125,255,.28); border:0; }
+    .btn.secondary { background:rgba(255,255,255,.08); border:1px solid var(--line); box-shadow:none; }
+    .hero { max-width:1180px; margin:0 auto; padding:82px 22px 42px; display:grid; grid-template-columns:1.04fr .96fr; gap:34px; align-items:center; }
+    .eyebrow { display:inline-flex; padding:8px 12px; border:1px solid rgba(61,231,255,.35); border-radius:999px; color:#9df4ff; background:rgba(61,231,255,.08); font-weight:800; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size: clamp(42px, 6vw, 78px); line-height:.95; margin:22px 0 18px; letter-spacing:-.06em; }
+    .grad { background:linear-gradient(90deg,#fff,#62e9ff,#a77cff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .hero p { color:var(--muted); font-size:19px; line-height:1.65; max-width:640px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:28px; }
+    .hero-panel { background:rgba(255,255,255,.06); border:1px solid var(--line); border-radius:28px; padding:18px; box-shadow:var(--shadow); }
+    .hero-panel img { width:100%; border-radius:20px; display:block; border:1px solid rgba(255,255,255,.12); }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:16px; }
+    .stat { border-radius:18px; padding:16px; background:rgba(255,255,255,.07); border:1px solid var(--line); }
+    .stat b { display:block; font-size:25px; }
+    .stat span { color:var(--muted); font-size:13px; }
+    section { max-width:1180px; margin:0 auto; padding:54px 22px; }
+    .section-head { display:flex; justify-content:space-between; gap:22px; align-items:end; margin-bottom:24px; }
+    h2 { font-size: clamp(30px, 4vw, 48px); letter-spacing:-.04em; margin:0; }
+    .section-head p { color:var(--muted); max-width:520px; line-height:1.6; margin:0; }
+    .cert-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+    .cert-card { overflow:hidden; border-radius:26px; background:linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.04)); border:1px solid var(--line); box-shadow:0 16px 46px rgba(0,0,0,.18); transition: transform .25s ease, border-color .25s ease; }
+    .cert-card:hover { transform:translateY(-5px); border-color:rgba(61,231,255,.38); }
+    .image-wrap { display:block; background:#081020; }
+    .cert-card img { width:100%; aspect-ratio: 16/9; object-fit:cover; display:block; }
+    .card-body { padding:22px; }
+    .meta { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+    .meta span { padding:7px 10px; border-radius:999px; background:rgba(61,231,255,.09); color:#aaf6ff; font-size:12px; font-weight:800; border:1px solid rgba(61,231,255,.20); }
+    h3 { margin:0 0 8px; font-size:24px; letter-spacing:-.03em; }
+    .tagline { color:#fff; font-weight:800; margin:0 0 8px; }
+    .card-body p:not(.tagline) { color:var(--muted); line-height:1.58; margin:0 0 16px; }
+    .mini-link { color:#7becff; font-weight:800; }
+    .feature { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .box { border:1px solid var(--line); border-radius:26px; background:rgba(255,255,255,.06); padding:26px; }
+    .steps { list-style:none; padding:0; margin:18px 0 0; display:grid; gap:12px; }
+    .steps li { display:flex; gap:12px; align-items:flex-start; color:var(--muted); }
+    .steps b { display:grid; place-items:center; flex:0 0 28px; height:28px; border-radius:50%; background:linear-gradient(135deg,var(--cyan),var(--purple)); color:#07111f; font-size:13px; }
+    .program-list { list-style:none; padding:0; margin:0; display:grid; gap:10px; }
+    .program-list a { display:flex; gap:14px; align-items:center; padding:14px; border-radius:16px; background:rgba(255,255,255,.06); border:1px solid var(--line); color:var(--muted); font-weight:700; }
+    .program-list a:hover { color:white; border-color:rgba(61,231,255,.35); }
+    .program-list span { color:#7becff; font-weight:900; }
+    .cta { text-align:center; border-radius:34px; padding:52px 28px; background:linear-gradient(135deg, rgba(44,125,255,.22), rgba(155,92,255,.18), rgba(61,231,255,.12)); border:1px solid rgba(255,255,255,.16); box-shadow:var(--shadow); }
+    .cta p { color:var(--muted); font-size:18px; line-height:1.6; max-width:720px; margin:16px auto 26px; }
+    footer { max-width:1180px; margin:auto; padding:30px 22px 50px; color:var(--muted); border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    @media (max-width: 900px) { .hero, .feature { grid-template-columns:1fr; } .cert-grid { grid-template-columns:1fr; } .stats { grid-template-columns:repeat(2,1fr); } .nav-links { display:none; } .section-head { display:block; } .section-head p { margin-top:12px; } }
+    @media (max-width: 520px) { .stats { grid-template-columns:1fr; } .hero-actions { flex-direction:column; } .btn { width:100%; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top"><span class="logo">AI</span><span>School of AI</span></a>
+      <div class="nav-links">
+        <a href="#certifications">Certifications</a>
+        <a href="#how">How it works</a>
+        <a href="#apply">Get Certified</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div>
+        <span class="eyebrow">10 Free AI Certifications</span>
+        <h1>Learn AI by <span class="grad">building real projects.</span></h1>
+        <p>Free video lectures, hands-on labs, portfolio projects, GitHub submissions, and a Certificate of Excellence you earn through real work.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#certifications">Explore Certifications</a>
+          <a class="btn secondary" href="#how">See How Certification Works</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>10</b><span>Free certifications</span></div>
+          <div class="stat"><b>2–12</b><span>Week programs</span></div>
+          <div class="stat"><b>0</b><span>Exams or tests</span></div>
+          <div class="stat"><b>100%</b><span>Project-based</span></div>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <img src="assets/ai-engineering-intelligent-systems.webp" alt="AI Engineering and Intelligent Systems certification">
+      </div>
+    </header>
+
+    <section id="certifications">
+      <div class="section-head">
+        <h2>Choose your AI path</h2>
+        <p>Each program includes video lessons, hands-on labs, and practical projects designed to help you build job-ready AI skills.</p>
+      </div>
+      <div class="cert-grid">
+
+      <article class="cert-card" id="generative-ai-foundations">
+        <a class="image-wrap" href="#generative-ai-foundations" aria-label="View Generative AI Foundations">
+          <img src="assets/generative-ai-foundations.webp" alt="Generative AI Foundations certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>3 Weeks</span><span>Starts May 11</span></div>
+          <h3>Generative AI Foundations</h3>
+          <p class="tagline">Understand. Explore. Apply. Create.</p>
+          <p>Build a strong conceptual and practical foundation in Generative AI.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="project-managers">
+        <a class="image-wrap" href="#project-managers" aria-label="View AI for Project Managers">
+          <img src="assets/project-managers.webp" alt="AI for Project Managers certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>2 Weeks</span><span>Starts May 25</span></div>
+          <h3>AI for Project Managers</h3>
+          <p class="tagline">Plan Smarter. Communicate Clearly. Deliver Better.</p>
+          <p>Use AI for planning, documentation, reporting, risks, and project delivery.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="marketers">
+        <a class="image-wrap" href="#marketers" aria-label="View AI for Marketers">
+          <img src="assets/marketers.webp" alt="AI for Marketers certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>2 Weeks</span><span>Starts May 18</span></div>
+          <h3>AI for Marketers</h3>
+          <p class="tagline">Create. Automate. Analyze. Grow.</p>
+          <p>Build AI-powered marketing workflows for content, campaigns, SEO, and analytics.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="responsible-ai-governance">
+        <a class="image-wrap" href="#responsible-ai-governance" aria-label="View Responsible AI & Governance">
+          <img src="assets/responsible-ai-governance.webp" alt="Responsible AI & Governance certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>3 Weeks</span><span>Starts May 25</span></div>
+          <h3>Responsible AI & Governance</h3>
+          <p class="tagline">Build Trust. Manage Risk. Create Impact.</p>
+          <p>Learn responsible AI, governance frameworks, risk controls, audits, and compliance.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="agents-agentic-workflows">
+        <a class="image-wrap" href="#agents-agentic-workflows" aria-label="View AI Agents & Agentic Workflows">
+          <img src="assets/agents-agentic-workflows.webp" alt="AI Agents & Agentic Workflows certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>4 Weeks</span><span>Starts May 18</span></div>
+          <h3>AI Agents & Agentic Workflows</h3>
+          <p class="tagline">Design. Build. Orchestrate. Deploy.</p>
+          <p>Build agents that use tools, memory, RAG, multi-agent systems, and workflows.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="prompt-engineering">
+        <a class="image-wrap" href="#prompt-engineering" aria-label="View Prompt Engineering">
+          <img src="assets/prompt-engineering.webp" alt="Prompt Engineering certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>2 Weeks</span><span>Starts May 18</span></div>
+          <h3>Prompt Engineering</h3>
+          <p class="tagline">Write Better Prompts. Get Better Results.</p>
+          <p>Master practical prompt patterns for better outputs, daily workflows, and reuse.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="cybersecurity">
+        <a class="image-wrap" href="#cybersecurity" aria-label="View AI for Cybersecurity">
+          <img src="assets/cybersecurity.webp" alt="AI for Cybersecurity certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>3 Weeks</span><span>Starts May 25</span></div>
+          <h3>AI for Cybersecurity</h3>
+          <p class="tagline">AI-Powered Defense. Smarter Threat Detection.</p>
+          <p>Explore AI for threat detection, security analytics, defense, and response systems.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="business-productivity">
+        <a class="image-wrap" href="#business-productivity" aria-label="View AI for Business Productivity">
+          <img src="assets/business-productivity.webp" alt="AI for Business Productivity certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>2 Weeks</span><span>Starts May 25</span></div>
+          <h3>AI for Business Productivity</h3>
+          <p class="tagline">Work Smarter. Save Time. Achieve More.</p>
+          <p>Use AI to streamline meetings, documents, research, reporting, and personal workflows.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="no-code-automation">
+        <a class="image-wrap" href="#no-code-automation" aria-label="View No-Code AI Automation">
+          <img src="assets/no-code-automation.webp" alt="No-Code AI Automation certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>2 Weeks</span><span>Starts May 18</span></div>
+          <h3>No-Code AI Automation</h3>
+          <p class="tagline">Automate Smarter. Work Less. Achieve More.</p>
+          <p>Connect apps and build AI automations with no-code tools like Zapier, Make, and GPTs.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+
+      <article class="cert-card" id="ai-engineering-intelligent-systems">
+        <a class="image-wrap" href="#ai-engineering-intelligent-systems" aria-label="View AI Engineering & Intelligent Systems">
+          <img src="assets/ai-engineering-intelligent-systems.webp" alt="AI Engineering & Intelligent Systems certification banner" loading="lazy">
+        </a>
+        <div class="card-body">
+          <div class="meta"><span>12 Weeks</span><span>Starts May 11</span></div>
+          <h3>AI Engineering & Intelligent Systems</h3>
+          <p class="tagline">From Zero to AI Builder</p>
+          <p>A comprehensive path from AI foundations to production-ready intelligent systems.</p>
+          <a class="mini-link" href="#apply">Get certified →</a>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="feature">
+        <div class="box">
+          <span class="eyebrow">Certificate of Excellence</span>
+          <h2 style="margin-top:16px">No passive certificates.</h2>
+          <p style="color:var(--muted); line-height:1.65">This is not a certificate of completion. To earn it, participants complete the work, build real projects, upload them to GitHub, and submit proof for review.</p>
+          <ol class="steps">
+            <li><b>1</b><span>Watch the video lectures and follow the weekly structure.</span></li>
+            <li><b>2</b><span>Complete the hands-on labs and build the required projects.</span></li>
+            <li><b>3</b><span>Upload project work to GitHub with clear documentation.</span></li>
+            <li><b>4</b><span>Submit GitHub links for review and earn the certificate.</span></li>
+          </ol>
+        </div>
+        <div class="box">
+          <span class="eyebrow">Programs</span>
+          <h2 style="margin-top:16px">All certifications</h2>
+          <ul class="program-list">
+
+          <li><a href="#generative-ai-foundations"><span>01</span>Generative AI Foundations</a></li>
+
+          <li><a href="#project-managers"><span>02</span>AI for Project Managers</a></li>
+
+          <li><a href="#marketers"><span>03</span>AI for Marketers</a></li>
+
+          <li><a href="#responsible-ai-governance"><span>04</span>Responsible AI & Governance</a></li>
+
+          <li><a href="#agents-agentic-workflows"><span>05</span>AI Agents & Agentic Workflows</a></li>
+
+          <li><a href="#prompt-engineering"><span>06</span>Prompt Engineering</a></li>
+
+          <li><a href="#cybersecurity"><span>07</span>AI for Cybersecurity</a></li>
+
+          <li><a href="#business-productivity"><span>08</span>AI for Business Productivity</a></li>
+
+          <li><a href="#no-code-automation"><span>09</span>No-Code AI Automation</a></li>
+
+          <li><a href="#ai-engineering-intelligent-systems"><span>10</span>AI Engineering & Intelligent Systems</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="cta">
+        <span class="eyebrow">Free Enrollment</span>
+        <h2 style="margin-top:16px">Learn AI. Build projects. Earn excellence.</h2>
+        <p>Start with the path that matches your goals, complete the labs, publish your projects, and prove your skills with a School of AI Certificate of Excellence.</p>
+        <a class="btn" href="https://www.skool.com/school-of-ai/10-free-ai-certifications-from-school-of-ai-build-projects-earn-excellence?p=54b3e9dc">Enroll / Contact School of AI</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>School of AI</strong>
+    <span>10 Free AI Certifications · Video Lectures · Hands-on Labs · GitHub Projects</span>
+  </footer>
+</body>
+</html>
