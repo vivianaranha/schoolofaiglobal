@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab: Deep Learning | Semester 7: Specialization and Industry Readiness</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subject-page">
+  <div class="progress-bar" id="progress-bar"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">B.Sc. Computer Science Library</a>
+      <nav class="topnav">
+        <a href="../index.html">Program Home</a>
+        <a href="../semester-1/index.html">Semester 1</a><a href="../semester-2/index.html">Semester 2</a><a href="../semester-3/index.html">Semester 3</a><a href="../semester-4/index.html">Semester 4</a><a href="../semester-5/index.html">Semester 5</a><a href="../semester-6/index.html">Semester 6</a><a href="../semester-7/index.html">Semester 7</a><a href="../semester-8/index.html">Semester 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="hero card">
+    <div class="breadcrumbs"><a href="../index.html">Program Home</a><span>›</span><a href="index.html">Semester 7</a><span>›</span><a href="lab-deep-learning.html">Lab: Deep Learning</a></div>
+    <p class="eyebrow">Semester 7 • Lab</p>
+    <h1>Lab: Deep Learning</h1>
+    <p class="hero-copy">Lab: Deep Learning is a hands-on lab in semester 7 that teaches neural-network modeling, training workflows, and evaluation for modern AI tasks.</p>
+    <div class="stat-row"><div class="stat-card"><span>Learning Outcomes</span><strong>10</strong></div><div class="stat-card"><span>Modules</span><strong>10</strong></div><div class="stat-card"><span>Lab Exercises</span><strong>12</strong></div><div class="stat-card"><span>Quiz Questions</span><strong>20</strong></div></div>
+  </section>
+    
+    <div class="content-layout">
+      <aside class="sidebar card sticky"><div class="sidebar-block"><p class="eyebrow">Navigate</p><h3>Lab: Deep Learning</h3><p class="sidebar-meta">Semester 7 • Lab</p></div><nav class="toc"><a href="#learning-outcomes">Learning Outcomes</a><a href="#modules">Course Modules</a><a href="#deep-dives">Deep-Dive Lessons</a><a href="#code-examples">Code Examples</a><a href="#activities">Lab Activities</a><a href="#assignments">Assignments</a><a href="#quiz">Quiz</a><a href="#final-project">Final Project</a><a href="#summary">Summary</a><a href="#references">References</a></nav><div class="sidebar-block"><p class="eyebrow">Quick Links</p><a class="small-link" href="../index.html">Program Home</a><a class="small-link" href="index.html">Semester Overview</a></div></aside>
+      <section class="main-column">
+    <section class="card">
+      <div class="section-header" id="learning-outcomes"><span class="section-badge">02</span><div><h2>Learning Outcomes</h2><p>By the end of this subject, a self-paced learner should be able to do the following with confidence.</p></div></div>
+      <ul class="outcomes-list"><li>Explain perceptrons, neurons, and activation functions within realistic lab: deep learning scenarios.</li><li>Apply forward propagation and representation learning within realistic lab: deep learning scenarios.</li><li>Analyze loss functions and optimization objectives within realistic lab: deep learning scenarios.</li><li>Design backpropagation and gradient-based training within realistic lab: deep learning scenarios.</li><li>Evaluate regularization and overfitting prevention within realistic lab: deep learning scenarios.</li><li>Interpret convolutional neural networks for images within realistic lab: deep learning scenarios.</li><li>Implement sequence models for temporal data within realistic lab: deep learning scenarios.</li><li>Compare transfer learning and pretrained models within realistic lab: deep learning scenarios.</li><li>Troubleshoot experiment tracking, tuning, and evaluation within realistic lab: deep learning scenarios.</li><li>Connect deployment considerations and responsible use within realistic lab: deep learning scenarios.</li></ul>
+    </section>
+    <div class="section-header" id="modules"><span class="section-badge">03</span><div><h2>Course Modules</h2><p>Ten content-rich modules move from beginner explanations to deeper reasoning, practical examples, and mini exercises.</p></div></div>
+    <div class="stack-lg">
+      <article class="card module-card " data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 1</p>
+            <h3>Perceptrons, neurons, and activation functions</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Collapse</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses perceptrons, neurons, and activation functions as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect perceptrons, neurons, and activation functions to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply perceptrons, neurons, and activation functions while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Perceptrons</span><span class="chip">neurons</span><span class="chip">activation functions</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Perceptrons</li><li>neurons</li><li>activation functions</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on perceptrons, neurons, and activation functions when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using perceptrons, neurons, and activation functions, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 2</p>
+            <h3>Forward propagation and representation learning</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses forward propagation and representation learning as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect forward propagation and representation learning to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply forward propagation and representation learning while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Forward propagation</span><span class="chip">representation learning</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Forward propagation</li><li>representation learning</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on forward propagation and representation learning when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using forward propagation and representation learning, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 3</p>
+            <h3>Loss functions and optimization objectives</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses loss functions and optimization objectives as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect loss functions and optimization objectives to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply loss functions and optimization objectives while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Loss functions</span><span class="chip">optimization objectives</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Loss functions</li><li>optimization objectives</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on loss functions and optimization objectives when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using loss functions and optimization objectives, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 4</p>
+            <h3>Backpropagation and gradient-based training</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses backpropagation and gradient-based training as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect backpropagation and gradient-based training to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply backpropagation and gradient-based training while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Backpropagation</span><span class="chip">gradient-based training</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Backpropagation</li><li>gradient-based training</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on backpropagation and gradient-based training when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using backpropagation and gradient-based training, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 5</p>
+            <h3>Regularization and overfitting prevention</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses regularization and overfitting prevention as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect regularization and overfitting prevention to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply regularization and overfitting prevention while building or improving a device or network troubleshooting case. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Regularization</span><span class="chip">overfitting prevention</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Regularization</li><li>overfitting prevention</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on regularization and overfitting prevention when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising an AI-assisted product feature. By using regularization and overfitting prevention, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 6</p>
+            <h3>Convolutional neural networks for images</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses convolutional neural networks for images as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect convolutional neural networks for images to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply convolutional neural networks for images while building or improving an AI-assisted product feature. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Convolutional neural networks</span><span class="chip">images</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Convolutional neural networks</li><li>images</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on convolutional neural networks for images when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a student information platform. By using convolutional neural networks for images, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 7</p>
+            <h3>Sequence models for temporal data</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses sequence models for temporal data as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect sequence models for temporal data to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply sequence models for temporal data while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Sequence models</span><span class="chip">temporal data</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Sequence models</li><li>temporal data</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on sequence models for temporal data when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using sequence models for temporal data, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 8</p>
+            <h3>Transfer learning and pretrained models</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses transfer learning and pretrained models as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect transfer learning and pretrained models to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply transfer learning and pretrained models while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Transfer learning</span><span class="chip">pretrained models</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Transfer learning</li><li>pretrained models</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on transfer learning and pretrained models when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using transfer learning and pretrained models, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 9</p>
+            <h3>Experiment tracking, tuning, and evaluation</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses experiment tracking, tuning, and evaluation as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect experiment tracking, tuning, and evaluation to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply experiment tracking, tuning, and evaluation while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Experiment tracking</span><span class="chip">tuning</span><span class="chip">evaluation</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Experiment tracking</li><li>tuning</li><li>evaluation</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on experiment tracking, tuning, and evaluation when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using experiment tracking, tuning, and evaluation, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 10</p>
+            <h3>Deployment considerations and responsible use</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Lab: Deep Learning uses deployment considerations and responsible use as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect deployment considerations and responsible use to the broader artificial intelligence pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 7: Specialization and Industry Readiness, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply deployment considerations and responsible use while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Deployment considerations</span><span class="chip">responsible use</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Deployment considerations</li><li>responsible use</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on deployment considerations and responsible use when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using deployment considerations and responsible use, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="deep-dives"><span class="section-badge">04</span><div><h2>Deep-Dive Lessons</h2><p>Major themes are unpacked from beginner view to advanced notes, with simple HTML/CSS diagrams for structure.</p></div></div>
+    <div class="diagram-box card">
+      <h3>Lab: Deep Learning Concept Map</h3>
+      <div class="flow-diagram">
+        <div class="flow-node">Perceptrons, neurons, and activation functions</div><div class="flow-arrow">→</div><div class="flow-node">Forward propagation and representation learning</div><div class="flow-arrow">→</div><div class="flow-node">Loss functions and optimization objectives</div><div class="flow-arrow">→</div><div class="flow-node">Backpropagation and gradient-based training</div>
+      </div>
+      <p class="muted">Read the diagram left to right: foundational ideas support system design, implementation, and evaluation.</p>
+    </div>
+    <div class="grid three-col">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 1</p>
+        <h3>Perceptrons, neurons, and activation functions</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat perceptrons, neurons, and activation functions as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Lab: Deep Learning.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to perceptrons, neurons, and activation functions. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map perceptrons, neurons, and activation functions onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 2</p>
+        <h3>Forward propagation and representation learning</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat forward propagation and representation learning as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Lab: Deep Learning.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to forward propagation and representation learning. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map forward propagation and representation learning onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 3</p>
+        <h3>Loss functions and optimization objectives</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat loss functions and optimization objectives as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Lab: Deep Learning.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to loss functions and optimization objectives. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map loss functions and optimization objectives onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    </div>
+    <div class="section-header" id="code-examples"><span class="section-badge">05</span><div><h2>Code Examples</h2><p>Step-by-step walkthroughs connect ideas to executable artifacts.</p></div></div>
+    <div class="stack-lg">
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Training a Tiny Neural Network</h3>
+              <p>PYTHON example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>import torch
+from torch import nn
+
+model = nn.Sequential(
+    nn.Linear(4, 8),
+    nn.ReLU(),
+    nn.Linear(8, 3)
+)
+
+inputs = torch.rand(16, 4)
+targets = torch.randint(0, 3, (16,))
+loss_fn = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+
+for _ in range(20):
+    predictions = model(inputs)
+    loss = loss_fn(predictions, targets)
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+
+print(round(loss.item(), 4))</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Define layers that map input features to hidden representations and output classes.</li><li>Choose a loss function that matches the prediction task.</li><li>Run forward and backward passes inside the training loop.</li><li>Update parameters with an optimizer that improves the model gradually over time.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>Prints a loss value that generally decreases over training iterations.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+    <div class="section-header" id="activities"><span class="section-badge">06</span><div><h2>Lab Activities</h2><p>Each exercise is designed as a repeatable hands-on lab with a clear expected outcome.</p></div></div>
+    <div class="stack-lg">
+      <article class="card activity-card">
+        <h3>Lab Exercise 1: Perceptrons, neurons, and activation functions</h3>
+        <p><strong>Objective:</strong> Use perceptrons, neurons, and activation functions to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind perceptrons, neurons, and activation functions and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of perceptrons, neurons, and activation functions in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made perceptrons, neurons, and activation functions easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 2: Forward propagation and representation learning</h3>
+        <p><strong>Objective:</strong> Use forward propagation and representation learning to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind forward propagation and representation learning and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of forward propagation and representation learning in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made forward propagation and representation learning easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 3: Loss functions and optimization objectives</h3>
+        <p><strong>Objective:</strong> Use loss functions and optimization objectives to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind loss functions and optimization objectives and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of loss functions and optimization objectives in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made loss functions and optimization objectives easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 4: Backpropagation and gradient-based training</h3>
+        <p><strong>Objective:</strong> Use backpropagation and gradient-based training to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind backpropagation and gradient-based training and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of backpropagation and gradient-based training in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made backpropagation and gradient-based training easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 5: Regularization and overfitting prevention</h3>
+        <p><strong>Objective:</strong> Use regularization and overfitting prevention to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind regularization and overfitting prevention and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of regularization and overfitting prevention in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made regularization and overfitting prevention easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 6: Convolutional neural networks for images</h3>
+        <p><strong>Objective:</strong> Use convolutional neural networks for images to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind convolutional neural networks for images and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of convolutional neural networks for images in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made convolutional neural networks for images easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 7: Sequence models for temporal data</h3>
+        <p><strong>Objective:</strong> Use sequence models for temporal data to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind sequence models for temporal data and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of sequence models for temporal data in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made sequence models for temporal data easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 8: Transfer learning and pretrained models</h3>
+        <p><strong>Objective:</strong> Use transfer learning and pretrained models to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind transfer learning and pretrained models and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of transfer learning and pretrained models in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made transfer learning and pretrained models easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 9: Experiment tracking, tuning, and evaluation</h3>
+        <p><strong>Objective:</strong> Use experiment tracking, tuning, and evaluation to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind experiment tracking, tuning, and evaluation and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of experiment tracking, tuning, and evaluation in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made experiment tracking, tuning, and evaluation easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 10: Deployment considerations and responsible use</h3>
+        <p><strong>Objective:</strong> Use deployment considerations and responsible use to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind deployment considerations and responsible use and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of deployment considerations and responsible use in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made deployment considerations and responsible use easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 11: Perceptrons, neurons, and activation functions</h3>
+        <p><strong>Objective:</strong> Use perceptrons, neurons, and activation functions to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind perceptrons, neurons, and activation functions and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of perceptrons, neurons, and activation functions in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made perceptrons, neurons, and activation functions easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Lab Exercise 12: Forward propagation and representation learning</h3>
+        <p><strong>Objective:</strong> Use forward propagation and representation learning to move from explanation to applied reasoning in Lab: Deep Learning.</p>
+        <p><strong>Tools Required:</strong> PyTorch or TensorFlow, GPUs when available, and notebooks.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind forward propagation and representation learning and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of forward propagation and representation learning in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made forward propagation and representation learning easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="assignments"><span class="section-badge">07</span><div><h2>Assignments</h2><p>Each assignment expects explanation, evidence, and reflection rather than rote answers.</p></div></div>
+    <div class="grid two-col">
+      <article class="card assignment-card">
+        <h3>Assignment 1: Concept mastery brief using Perceptrons, neurons, and activation functions</h3>
+        <p><strong>Task Description:</strong> Investigate perceptrons, neurons, and activation functions and produce a structured response that shows both conceptual understanding and applied judgment within Lab: Deep Learning.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 2: Comparative analysis using Loss functions and optimization objectives</h3>
+        <p><strong>Task Description:</strong> Investigate loss functions and optimization objectives and produce a structured response that shows both conceptual understanding and applied judgment within Lab: Deep Learning.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 3: Applied implementation or design task using Regularization and overfitting prevention</h3>
+        <p><strong>Task Description:</strong> Investigate regularization and overfitting prevention and produce a structured response that shows both conceptual understanding and applied judgment within Lab: Deep Learning.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 4: Case-study critique using Sequence models for temporal data</h3>
+        <p><strong>Task Description:</strong> Investigate sequence models for temporal data and produce a structured response that shows both conceptual understanding and applied judgment within Lab: Deep Learning.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 5: Integrative final assignment using Experiment tracking, tuning, and evaluation</h3>
+        <p><strong>Task Description:</strong> Investigate experiment tracking, tuning, and evaluation and produce a structured response that shows both conceptual understanding and applied judgment within Lab: Deep Learning.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    </div>
+    <div class="section-header" id="quiz"><span class="section-badge">08</span><div><h2>Quiz Section</h2><p>Twenty multiple-choice questions check both concept recognition and practical judgment.</p></div></div>
+    <div class="stack-lg">
+      <div class="grid two-col">
+        <article class="card quiz-card">
+          <h3>Q1. In Lab: Deep Learning, what is the main value of perceptrons, neurons, and activation functions?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q2. Which situation best demonstrates perceptrons, neurons, and activation functions in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q3. In Lab: Deep Learning, what is the main value of forward propagation and representation learning?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q4. Which situation best demonstrates forward propagation and representation learning in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q5. In Lab: Deep Learning, what is the main value of loss functions and optimization objectives?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q6. Which situation best demonstrates loss functions and optimization objectives in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q7. In Lab: Deep Learning, what is the main value of backpropagation and gradient-based training?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q8. Which situation best demonstrates backpropagation and gradient-based training in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q9. In Lab: Deep Learning, what is the main value of regularization and overfitting prevention?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q10. Which situation best demonstrates regularization and overfitting prevention in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q11. In Lab: Deep Learning, what is the main value of convolutional neural networks for images?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q12. Which situation best demonstrates convolutional neural networks for images in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q13. In Lab: Deep Learning, what is the main value of sequence models for temporal data?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q14. Which situation best demonstrates sequence models for temporal data in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q15. In Lab: Deep Learning, what is the main value of transfer learning and pretrained models?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q16. Which situation best demonstrates transfer learning and pretrained models in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q17. In Lab: Deep Learning, what is the main value of experiment tracking, tuning, and evaluation?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q18. Which situation best demonstrates experiment tracking, tuning, and evaluation in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q19. In Lab: Deep Learning, what is the main value of deployment considerations and responsible use?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q20. Which situation best demonstrates deployment considerations and responsible use in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      </div>
+      <article class="card answer-key">
+        <h3>Answer Key with Explanations</h3>
+        <div class="stack-md"><p><strong>Q1:</strong> A — Perceptrons, neurons, and activation functions matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q2:</strong> A — A realistic use of perceptrons, neurons, and activation functions involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q3:</strong> A — Forward propagation and representation learning matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q4:</strong> A — A realistic use of forward propagation and representation learning involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q5:</strong> A — Loss functions and optimization objectives matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q6:</strong> A — A realistic use of loss functions and optimization objectives involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q7:</strong> A — Backpropagation and gradient-based training matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q8:</strong> A — A realistic use of backpropagation and gradient-based training involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q9:</strong> A — Regularization and overfitting prevention matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q10:</strong> A — A realistic use of regularization and overfitting prevention involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q11:</strong> A — Convolutional neural networks for images matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q12:</strong> A — A realistic use of convolutional neural networks for images involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q13:</strong> A — Sequence models for temporal data matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q14:</strong> A — A realistic use of sequence models for temporal data involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q15:</strong> A — Transfer learning and pretrained models matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q16:</strong> A — A realistic use of transfer learning and pretrained models involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q17:</strong> A — Experiment tracking, tuning, and evaluation matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q18:</strong> A — A realistic use of experiment tracking, tuning, and evaluation involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q19:</strong> A — Deployment considerations and responsible use matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q20:</strong> A — A realistic use of deployment considerations and responsible use involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p></div>
+      </article>
+    </div>
+    <div class="section-header" id="final-project"><span class="section-badge">09</span><div><h2>Final Project or Assessment</h2><p>This culminating task asks the learner to demonstrate integrated understanding rather than isolated recall.</p></div></div>
+    <article class="card">
+      <p><strong>Project Objective:</strong> Synthesize the most important ideas from Lab: Deep Learning into one coherent, evidence-based artifact.</p>
+      <p><strong>Scenario:</strong> You are advising a small team that needs to apply lab: deep learning to a realistic problem with clear constraints and measurable outcomes.</p>
+      <h3>Requirements</h3>
+      <ul><li>Use at least three major topics from the course and explain why each one matters.</li><li>Create a concrete artifact such as a program, design, model, report, experiment, or architecture proposal.</li><li>Include testing, evaluation, or reflection criteria so quality can be judged transparently.</li><li>Document assumptions, trade-offs, and future improvements.</li></ul>
+      <h3>Step-by-Step Build Plan</h3>
+      <ol><li>Choose a realistic problem statement and define what success looks like.</li><li>Break the work into milestones tied to specific course concepts.</li><li>Build and review the core artifact iteratively rather than all at once.</li><li>Evaluate the result with evidence such as tests, traces, feedback, or metrics.</li><li>Package the final deliverable with documentation and a presentation-ready summary.</li></ol>
+      <p><strong>Deliverables:</strong> A final artifact, short technical report, demonstration summary, and evaluation evidence for Lab: Deep Learning.</p>
+      <h3>Rubric</h3>
+      <ul><li>Problem framing and relevance</li><li>Correct use of course concepts</li><li>Technical quality or analytical rigor</li><li>Documentation and communication clarity</li><li>Reflection, testing, and improvement planning</li></ul>
+    </article>
+    <div class="section-header" id="summary"><span class="section-badge">10</span><div><h2>Summary</h2><p>Close the loop by reviewing what you learned, what to study next, and how this course connects forward.</p></div></div>
+    <article class="card">
+      <p>Lab: Deep Learning helps learners build durable skill in artificial intelligence. Across the semester, the course moves from first-principles understanding into applied reasoning, structured practice, and more confident decision-making.</p>
+      <p><strong>What to study next:</strong> Revisit your weakest module, rebuild one example from memory, then extend it with a new constraint such as scale, security, cost, usability, or uncertainty.</p>
+      <p><strong>Connection to future semesters:</strong> This course supports later work such as Deep Learning, Advanced Artificial Intelligence, Elective: Generative AI. Treat your notes, assignments, and project artifacts here as reusable building blocks rather than one-time submissions.</p>
+    </article>
+    <div class="section-header" id="references"><span class="section-badge">11</span><div><h2>References and Further Study</h2><p>These are real public resources and established books that can support self-paced study beyond the course page.</p></div></div>
+    <div class="grid two-col">
+      <article class="card">
+        <h3>Recommended Books</h3>
+        <ul><li>Artificial Intelligence: A Modern Approach by Russell and Norvig</li><li>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurelien Geron</li></ul>
+      </article>
+      <article class="card">
+        <h3>Websites and Documentation</h3>
+        <ul><li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noreferrer">Google Machine Learning Crash Course</a></li><li><a href="https://scikit-learn.org/stable/" target="_blank" rel="noreferrer">scikit-learn Documentation</a></li><li><a href="https://pytorch.org/tutorials/" target="_blank" rel="noreferrer">PyTorch Tutorials</a></li></ul>
+        <h4>Practice Platforms</h4>
+        <ul><li><a href="https://www.kaggle.com/learn" target="_blank" rel="noreferrer">Kaggle Learn</a></li><li><a href="https://course.fast.ai/" target="_blank" rel="noreferrer">fast.ai</a></li></ul>
+      </article>
+    </div>
+    <section class="card nav-footer">
+      <h3>Course Navigation</h3>
+      <div class="footer-links">
+        <a class="button button-secondary" href="../index.html">Program Home</a>
+        <a class="button button-secondary" href="index.html">Semester Overview</a>
+        <a class="button button-secondary" href="elective-software-architecture.html">← Elective: Software Architecture</a>
+        <a class="button" href="lab-cloud-native-development.html">Lab: Cloud-Native Development →</a>
+      </div>
+    </section></section>
+    </div>
+  </main>
+  <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theory of Computation | Semester 4: Software Development and Networking</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subject-page">
+  <div class="progress-bar" id="progress-bar"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">B.Sc. Computer Science Library</a>
+      <nav class="topnav">
+        <a href="../index.html">Program Home</a>
+        <a href="../semester-1/index.html">Semester 1</a><a href="../semester-2/index.html">Semester 2</a><a href="../semester-3/index.html">Semester 3</a><a href="../semester-4/index.html">Semester 4</a><a href="../semester-5/index.html">Semester 5</a><a href="../semester-6/index.html">Semester 6</a><a href="../semester-7/index.html">Semester 7</a><a href="../semester-8/index.html">Semester 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="hero card">
+    <div class="breadcrumbs"><a href="../index.html">Program Home</a><span>›</span><a href="index.html">Semester 4</a><span>›</span><a href="theory-of-computation.html">Theory of Computation</a></div>
+    <p class="eyebrow">Semester 4 • Core</p>
+    <h1>Theory of Computation</h1>
+    <p class="hero-copy">Theory of Computation is a core course in semester 4 that studies formal languages, automata, computability, and complexity to define the limits of computation.</p>
+    <div class="stat-row"><div class="stat-card"><span>Learning Outcomes</span><strong>10</strong></div><div class="stat-card"><span>Modules</span><strong>10</strong></div><div class="stat-card"><span>Activities</span><strong>5</strong></div><div class="stat-card"><span>Quiz Questions</span><strong>20</strong></div></div>
+  </section>
+    
+    <div class="content-layout">
+      <aside class="sidebar card sticky"><div class="sidebar-block"><p class="eyebrow">Navigate</p><h3>Theory of Computation</h3><p class="sidebar-meta">Semester 4 • Core</p></div><nav class="toc"><a href="#learning-outcomes">Learning Outcomes</a><a href="#modules">Course Modules</a><a href="#deep-dives">Deep-Dive Lessons</a><a href="#code-examples">Code Examples</a><a href="#activities">Practice Activities</a><a href="#assignments">Assignments</a><a href="#quiz">Quiz</a><a href="#final-project">Final Project</a><a href="#summary">Summary</a><a href="#references">References</a></nav><div class="sidebar-block"><p class="eyebrow">Quick Links</p><a class="small-link" href="../index.html">Program Home</a><a class="small-link" href="index.html">Semester Overview</a></div></aside>
+      <section class="main-column">
+    <section class="card">
+      <div class="section-header" id="learning-outcomes"><span class="section-badge">02</span><div><h2>Learning Outcomes</h2><p>By the end of this subject, a self-paced learner should be able to do the following with confidence.</p></div></div>
+      <ul class="outcomes-list"><li>Explain alphabets, strings, and formal languages within realistic theory of computation scenarios.</li><li>Apply deterministic finite automata within realistic theory of computation scenarios.</li><li>Analyze nondeterminism and equivalent models within realistic theory of computation scenarios.</li><li>Design regular expressions and pattern languages within realistic theory of computation scenarios.</li><li>Evaluate context-free grammars and parse structure within realistic theory of computation scenarios.</li><li>Interpret pushdown automata and stack-based recognition within realistic theory of computation scenarios.</li><li>Implement turing machines and universal computation within realistic theory of computation scenarios.</li><li>Compare decidability and undecidable problems within realistic theory of computation scenarios.</li><li>Troubleshoot complexity classes and tractability within realistic theory of computation scenarios.</li><li>Connect applications in compilers and language design within realistic theory of computation scenarios.</li></ul>
+    </section>
+    <div class="section-header" id="modules"><span class="section-badge">03</span><div><h2>Course Modules</h2><p>Ten content-rich modules move from beginner explanations to deeper reasoning, practical examples, and mini exercises.</p></div></div>
+    <div class="stack-lg">
+      <article class="card module-card " data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 1</p>
+            <h3>Alphabets, strings, and formal languages</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Collapse</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses alphabets, strings, and formal languages as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect alphabets, strings, and formal languages to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply alphabets, strings, and formal languages while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Alphabets</span><span class="chip">strings</span><span class="chip">formal languages</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Alphabets</li><li>strings</li><li>formal languages</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on alphabets, strings, and formal languages when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using alphabets, strings, and formal languages, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 2</p>
+            <h3>Deterministic finite automata</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses deterministic finite automata as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect deterministic finite automata to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply deterministic finite automata while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Deterministic finite automata</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Deterministic finite automata</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on deterministic finite automata when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using deterministic finite automata, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 3</p>
+            <h3>Nondeterminism and equivalent models</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses nondeterminism and equivalent models as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect nondeterminism and equivalent models to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply nondeterminism and equivalent models while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Nondeterminism</span><span class="chip">equivalent models</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Nondeterminism</li><li>equivalent models</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on nondeterminism and equivalent models when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using nondeterminism and equivalent models, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 4</p>
+            <h3>Regular expressions and pattern languages</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses regular expressions and pattern languages as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect regular expressions and pattern languages to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply regular expressions and pattern languages while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Regular expressions</span><span class="chip">pattern languages</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Regular expressions</li><li>pattern languages</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on regular expressions and pattern languages when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using regular expressions and pattern languages, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 5</p>
+            <h3>Context-free grammars and parse structure</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses context-free grammars and parse structure as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect context-free grammars and parse structure to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply context-free grammars and parse structure while building or improving a device or network troubleshooting case. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Context-free grammars</span><span class="chip">parse structure</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Context-free grammars</li><li>parse structure</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on context-free grammars and parse structure when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising an AI-assisted product feature. By using context-free grammars and parse structure, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 6</p>
+            <h3>Pushdown automata and stack-based recognition</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses pushdown automata and stack-based recognition as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect pushdown automata and stack-based recognition to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply pushdown automata and stack-based recognition while building or improving an AI-assisted product feature. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Pushdown automata</span><span class="chip">stack-based recognition</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Pushdown automata</li><li>stack-based recognition</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on pushdown automata and stack-based recognition when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a student information platform. By using pushdown automata and stack-based recognition, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 7</p>
+            <h3>Turing machines and universal computation</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses turing machines and universal computation as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect turing machines and universal computation to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply turing machines and universal computation while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Turing machines</span><span class="chip">universal computation</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Turing machines</li><li>universal computation</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on turing machines and universal computation when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using turing machines and universal computation, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 8</p>
+            <h3>Decidability and undecidable problems</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses decidability and undecidable problems as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect decidability and undecidable problems to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply decidability and undecidable problems while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Decidability</span><span class="chip">undecidable problems</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Decidability</li><li>undecidable problems</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on decidability and undecidable problems when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using decidability and undecidable problems, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 9</p>
+            <h3>Complexity classes and tractability</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses complexity classes and tractability as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect complexity classes and tractability to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply complexity classes and tractability while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Complexity classes</span><span class="chip">tractability</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Complexity classes</li><li>tractability</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on complexity classes and tractability when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using complexity classes and tractability, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 10</p>
+            <h3>Applications in compilers and language design</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Theory of Computation uses applications in compilers and language design as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect applications in compilers and language design to the broader foundations pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 4: Software Development and Networking, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply applications in compilers and language design while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Applications in compilers</span><span class="chip">language design</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Applications in compilers</li><li>language design</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on applications in compilers and language design when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using applications in compilers and language design, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="deep-dives"><span class="section-badge">04</span><div><h2>Deep-Dive Lessons</h2><p>Major themes are unpacked from beginner view to advanced notes, with simple HTML/CSS diagrams for structure.</p></div></div>
+    <div class="diagram-box card">
+      <h3>Theory of Computation Concept Map</h3>
+      <div class="flow-diagram">
+        <div class="flow-node">Alphabets, strings, and formal languages</div><div class="flow-arrow">→</div><div class="flow-node">Deterministic finite automata</div><div class="flow-arrow">→</div><div class="flow-node">Nondeterminism and equivalent models</div><div class="flow-arrow">→</div><div class="flow-node">Regular expressions and pattern languages</div>
+      </div>
+      <p class="muted">Read the diagram left to right: foundational ideas support system design, implementation, and evaluation.</p>
+    </div>
+    <div class="grid three-col">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 1</p>
+        <h3>Alphabets, strings, and formal languages</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat alphabets, strings, and formal languages as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Theory of Computation.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to alphabets, strings, and formal languages. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map alphabets, strings, and formal languages onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 2</p>
+        <h3>Deterministic finite automata</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat deterministic finite automata as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Theory of Computation.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to deterministic finite automata. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map deterministic finite automata onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 3</p>
+        <h3>Nondeterminism and equivalent models</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat nondeterminism and equivalent models as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Theory of Computation.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to nondeterminism and equivalent models. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map nondeterminism and equivalent models onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    </div>
+    <div class="section-header" id="code-examples"><span class="section-badge">05</span><div><h2>Code Examples</h2><p>Step-by-step walkthroughs connect ideas to executable artifacts.</p></div></div>
+    <div class="stack-lg">
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>A High-Level Recursive-Descent Parsing Strategy</h3>
+              <p>TEXT example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>parseExpression()
+    left &lt;- parseTerm()
+    WHILE next token is '+' or '-'
+        operator &lt;- consume token
+        right &lt;- parseTerm()
+        left &lt;- new BinaryNode(operator, left, right)
+    RETURN left</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Map grammar rules to functions so the parser mirrors the language structure.</li><li>Parse higher-precedence units first and combine them as operators appear.</li><li>Create syntax-tree nodes during parsing instead of performing evaluation immediately.</li><li>Use grammar design to control how expressions are grouped.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>The parser builds a syntax tree that preserves precedence and associativity.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+    <div class="section-header" id="activities"><span class="section-badge">06</span><div><h2>Practice Activities</h2><p>These activities help move from passive reading to active use of the ideas.</p></div></div>
+    <div class="stack-lg">
+      <article class="card activity-card">
+        <h3>Practice Activity 1: Alphabets, strings, and formal languages</h3>
+        <p><strong>Objective:</strong> Use alphabets, strings, and formal languages to move from explanation to applied reasoning in Theory of Computation.</p>
+        <p><strong>Tools Required:</strong> Automata diagrams, grammar exercises, and proof templates.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind alphabets, strings, and formal languages and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of alphabets, strings, and formal languages in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made alphabets, strings, and formal languages easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 2: Deterministic finite automata</h3>
+        <p><strong>Objective:</strong> Use deterministic finite automata to move from explanation to applied reasoning in Theory of Computation.</p>
+        <p><strong>Tools Required:</strong> Automata diagrams, grammar exercises, and proof templates.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind deterministic finite automata and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of deterministic finite automata in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made deterministic finite automata easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 3: Nondeterminism and equivalent models</h3>
+        <p><strong>Objective:</strong> Use nondeterminism and equivalent models to move from explanation to applied reasoning in Theory of Computation.</p>
+        <p><strong>Tools Required:</strong> Automata diagrams, grammar exercises, and proof templates.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind nondeterminism and equivalent models and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of nondeterminism and equivalent models in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made nondeterminism and equivalent models easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 4: Regular expressions and pattern languages</h3>
+        <p><strong>Objective:</strong> Use regular expressions and pattern languages to move from explanation to applied reasoning in Theory of Computation.</p>
+        <p><strong>Tools Required:</strong> Automata diagrams, grammar exercises, and proof templates.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind regular expressions and pattern languages and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of regular expressions and pattern languages in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made regular expressions and pattern languages easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 5: Context-free grammars and parse structure</h3>
+        <p><strong>Objective:</strong> Use context-free grammars and parse structure to move from explanation to applied reasoning in Theory of Computation.</p>
+        <p><strong>Tools Required:</strong> Automata diagrams, grammar exercises, and proof templates.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind context-free grammars and parse structure and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of context-free grammars and parse structure in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made context-free grammars and parse structure easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="assignments"><span class="section-badge">07</span><div><h2>Assignments</h2><p>Each assignment expects explanation, evidence, and reflection rather than rote answers.</p></div></div>
+    <div class="grid two-col">
+      <article class="card assignment-card">
+        <h3>Assignment 1: Concept mastery brief using Alphabets, strings, and formal languages</h3>
+        <p><strong>Task Description:</strong> Investigate alphabets, strings, and formal languages and produce a structured response that shows both conceptual understanding and applied judgment within Theory of Computation.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 2: Comparative analysis using Nondeterminism and equivalent models</h3>
+        <p><strong>Task Description:</strong> Investigate nondeterminism and equivalent models and produce a structured response that shows both conceptual understanding and applied judgment within Theory of Computation.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 3: Applied implementation or design task using Context-free grammars and parse structure</h3>
+        <p><strong>Task Description:</strong> Investigate context-free grammars and parse structure and produce a structured response that shows both conceptual understanding and applied judgment within Theory of Computation.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 4: Case-study critique using Turing machines and universal computation</h3>
+        <p><strong>Task Description:</strong> Investigate turing machines and universal computation and produce a structured response that shows both conceptual understanding and applied judgment within Theory of Computation.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 5: Integrative final assignment using Complexity classes and tractability</h3>
+        <p><strong>Task Description:</strong> Investigate complexity classes and tractability and produce a structured response that shows both conceptual understanding and applied judgment within Theory of Computation.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    </div>
+    <div class="section-header" id="quiz"><span class="section-badge">08</span><div><h2>Quiz Section</h2><p>Twenty multiple-choice questions check both concept recognition and practical judgment.</p></div></div>
+    <div class="stack-lg">
+      <div class="grid two-col">
+        <article class="card quiz-card">
+          <h3>Q1. In Theory of Computation, what is the main value of alphabets, strings, and formal languages?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q2. Which situation best demonstrates alphabets, strings, and formal languages in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q3. In Theory of Computation, what is the main value of deterministic finite automata?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q4. Which situation best demonstrates deterministic finite automata in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q5. In Theory of Computation, what is the main value of nondeterminism and equivalent models?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q6. Which situation best demonstrates nondeterminism and equivalent models in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q7. In Theory of Computation, what is the main value of regular expressions and pattern languages?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q8. Which situation best demonstrates regular expressions and pattern languages in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q9. In Theory of Computation, what is the main value of context-free grammars and parse structure?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q10. Which situation best demonstrates context-free grammars and parse structure in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q11. In Theory of Computation, what is the main value of pushdown automata and stack-based recognition?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q12. Which situation best demonstrates pushdown automata and stack-based recognition in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q13. In Theory of Computation, what is the main value of turing machines and universal computation?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q14. Which situation best demonstrates turing machines and universal computation in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q15. In Theory of Computation, what is the main value of decidability and undecidable problems?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q16. Which situation best demonstrates decidability and undecidable problems in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q17. In Theory of Computation, what is the main value of complexity classes and tractability?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q18. Which situation best demonstrates complexity classes and tractability in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q19. In Theory of Computation, what is the main value of applications in compilers and language design?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q20. Which situation best demonstrates applications in compilers and language design in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      </div>
+      <article class="card answer-key">
+        <h3>Answer Key with Explanations</h3>
+        <div class="stack-md"><p><strong>Q1:</strong> A — Alphabets, strings, and formal languages matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q2:</strong> A — A realistic use of alphabets, strings, and formal languages involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q3:</strong> A — Deterministic finite automata matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q4:</strong> A — A realistic use of deterministic finite automata involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q5:</strong> A — Nondeterminism and equivalent models matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q6:</strong> A — A realistic use of nondeterminism and equivalent models involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q7:</strong> A — Regular expressions and pattern languages matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q8:</strong> A — A realistic use of regular expressions and pattern languages involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q9:</strong> A — Context-free grammars and parse structure matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q10:</strong> A — A realistic use of context-free grammars and parse structure involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q11:</strong> A — Pushdown automata and stack-based recognition matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q12:</strong> A — A realistic use of pushdown automata and stack-based recognition involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q13:</strong> A — Turing machines and universal computation matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q14:</strong> A — A realistic use of turing machines and universal computation involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q15:</strong> A — Decidability and undecidable problems matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q16:</strong> A — A realistic use of decidability and undecidable problems involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q17:</strong> A — Complexity classes and tractability matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q18:</strong> A — A realistic use of complexity classes and tractability involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q19:</strong> A — Applications in compilers and language design matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q20:</strong> A — A realistic use of applications in compilers and language design involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p></div>
+      </article>
+    </div>
+    <div class="section-header" id="final-project"><span class="section-badge">09</span><div><h2>Final Project or Assessment</h2><p>This culminating task asks the learner to demonstrate integrated understanding rather than isolated recall.</p></div></div>
+    <article class="card">
+      <p><strong>Project Objective:</strong> Synthesize the most important ideas from Theory of Computation into one coherent, evidence-based artifact.</p>
+      <p><strong>Scenario:</strong> You are advising a small team that needs to apply theory of computation to a realistic problem with clear constraints and measurable outcomes.</p>
+      <h3>Requirements</h3>
+      <ul><li>Use at least three major topics from the course and explain why each one matters.</li><li>Create a concrete artifact such as a program, design, model, report, experiment, or architecture proposal.</li><li>Include testing, evaluation, or reflection criteria so quality can be judged transparently.</li><li>Document assumptions, trade-offs, and future improvements.</li></ul>
+      <h3>Step-by-Step Build Plan</h3>
+      <ol><li>Choose a realistic problem statement and define what success looks like.</li><li>Break the work into milestones tied to specific course concepts.</li><li>Build and review the core artifact iteratively rather than all at once.</li><li>Evaluate the result with evidence such as tests, traces, feedback, or metrics.</li><li>Package the final deliverable with documentation and a presentation-ready summary.</li></ol>
+      <p><strong>Deliverables:</strong> A final artifact, short technical report, demonstration summary, and evaluation evidence for Theory of Computation.</p>
+      <h3>Rubric</h3>
+      <ul><li>Problem framing and relevance</li><li>Correct use of course concepts</li><li>Technical quality or analytical rigor</li><li>Documentation and communication clarity</li><li>Reflection, testing, and improvement planning</li></ul>
+    </article>
+    <div class="section-header" id="summary"><span class="section-badge">10</span><div><h2>Summary</h2><p>Close the loop by reviewing what you learned, what to study next, and how this course connects forward.</p></div></div>
+    <article class="card">
+      <p>Theory of Computation helps learners build durable skill in foundations. Across the semester, the course moves from first-principles understanding into applied reasoning, structured practice, and more confident decision-making.</p>
+      <p><strong>What to study next:</strong> Revisit your weakest module, rebuild one example from memory, then extend it with a new constraint such as scale, security, cost, usability, or uncertainty.</p>
+      <p><strong>Connection to future semesters:</strong> This course supports later work such as Elective: Quantum Computing Fundamentals. Treat your notes, assignments, and project artifacts here as reusable building blocks rather than one-time submissions.</p>
+    </article>
+    <div class="section-header" id="references"><span class="section-badge">11</span><div><h2>References and Further Study</h2><p>These are real public resources and established books that can support self-paced study beyond the course page.</p></div></div>
+    <div class="grid two-col">
+      <article class="card">
+        <h3>Recommended Books</h3>
+        <ul><li>Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein</li><li>Open Data Structures by Pat Morin</li></ul>
+      </article>
+      <article class="card">
+        <h3>Websites and Documentation</h3>
+        <ul><li><a href="https://visualgo.net/en" target="_blank" rel="noreferrer">VisuAlgo</a></li><li><a href="https://cp-algorithms.com/" target="_blank" rel="noreferrer">CP-Algorithms</a></li><li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/" target="_blank" rel="noreferrer">MIT OpenCourseWare Algorithms</a></li></ul>
+        <h4>Practice Platforms</h4>
+        <ul><li><a href="https://leetcode.com/" target="_blank" rel="noreferrer">LeetCode</a></li><li><a href="https://usaco.guide/" target="_blank" rel="noreferrer">USACO Guide</a></li></ul>
+      </article>
+    </div>
+    <section class="card nav-footer">
+      <h3>Course Navigation</h3>
+      <div class="footer-links">
+        <a class="button button-secondary" href="../index.html">Program Home</a>
+        <a class="button button-secondary" href="index.html">Semester Overview</a>
+        <a class="button button-secondary" href="web-application-development.html">← Web Application Development</a>
+        <a class="button" href="human-computer-interaction.html">Human-Computer Interaction →</a>
+      </div>
+    </section></section>
+    </div>
+  </main>
+  <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <script src="../script.js"></script>
+</body>
+</html>

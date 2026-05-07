@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Management Systems | Semester 3: Algorithms, Databases, and Systems</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subject-page">
+  <div class="progress-bar" id="progress-bar"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">B.Sc. Computer Science Library</a>
+      <nav class="topnav">
+        <a href="../index.html">Program Home</a>
+        <a href="../semester-1/index.html">Semester 1</a><a href="../semester-2/index.html">Semester 2</a><a href="../semester-3/index.html">Semester 3</a><a href="../semester-4/index.html">Semester 4</a><a href="../semester-5/index.html">Semester 5</a><a href="../semester-6/index.html">Semester 6</a><a href="../semester-7/index.html">Semester 7</a><a href="../semester-8/index.html">Semester 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="hero card">
+    <div class="breadcrumbs"><a href="../index.html">Program Home</a><span>›</span><a href="index.html">Semester 3</a><span>›</span><a href="database-management-systems.html">Database Management Systems</a></div>
+    <p class="eyebrow">Semester 3 • Core</p>
+    <h1>Database Management Systems</h1>
+    <p class="hero-copy">Database Management Systems is a core course in semester 3 that covers relational data modeling, SQL, transactions, and the principles behind reliable data systems.</p>
+    <div class="stat-row"><div class="stat-card"><span>Learning Outcomes</span><strong>10</strong></div><div class="stat-card"><span>Modules</span><strong>10</strong></div><div class="stat-card"><span>Activities</span><strong>5</strong></div><div class="stat-card"><span>Quiz Questions</span><strong>20</strong></div></div>
+  </section>
+    
+    <div class="content-layout">
+      <aside class="sidebar card sticky"><div class="sidebar-block"><p class="eyebrow">Navigate</p><h3>Database Management Systems</h3><p class="sidebar-meta">Semester 3 • Core</p></div><nav class="toc"><a href="#learning-outcomes">Learning Outcomes</a><a href="#modules">Course Modules</a><a href="#deep-dives">Deep-Dive Lessons</a><a href="#code-examples">Code Examples</a><a href="#activities">Practice Activities</a><a href="#assignments">Assignments</a><a href="#quiz">Quiz</a><a href="#final-project">Final Project</a><a href="#summary">Summary</a><a href="#references">References</a></nav><div class="sidebar-block"><p class="eyebrow">Quick Links</p><a class="small-link" href="../index.html">Program Home</a><a class="small-link" href="index.html">Semester Overview</a></div></aside>
+      <section class="main-column">
+    <section class="card">
+      <div class="section-header" id="learning-outcomes"><span class="section-badge">02</span><div><h2>Learning Outcomes</h2><p>By the end of this subject, a self-paced learner should be able to do the following with confidence.</p></div></div>
+      <ul class="outcomes-list"><li>Explain database purpose and file-system limitations within realistic database management systems scenarios.</li><li>Apply relational tables, tuples, and schemas within realistic database management systems scenarios.</li><li>Analyze primary keys, foreign keys, and relationships within realistic database management systems scenarios.</li><li>Design entity-relationship modeling and conceptual design within realistic database management systems scenarios.</li><li>Evaluate normalization and anomaly reduction within realistic database management systems scenarios.</li><li>Interpret sql querying with filtering and aggregation within realistic database management systems scenarios.</li><li>Implement joins, subqueries, and multi-table reasoning within realistic database management systems scenarios.</li><li>Compare indexes and performance basics within realistic database management systems scenarios.</li><li>Troubleshoot transactions, acid, and concurrency foundations within realistic database management systems scenarios.</li><li>Connect security, backup, recovery, and a nosql introduction within realistic database management systems scenarios.</li></ul>
+    </section>
+    <div class="section-header" id="modules"><span class="section-badge">03</span><div><h2>Course Modules</h2><p>Ten content-rich modules move from beginner explanations to deeper reasoning, practical examples, and mini exercises.</p></div></div>
+    <div class="stack-lg">
+      <article class="card module-card " data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 1</p>
+            <h3>Database purpose and file-system limitations</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Collapse</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses database purpose and file-system limitations as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect database purpose and file-system limitations to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply database purpose and file-system limitations while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Database purpose</span><span class="chip">file-system limitations</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Database purpose</li><li>file-system limitations</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on database purpose and file-system limitations when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using database purpose and file-system limitations, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 2</p>
+            <h3>Relational tables, tuples, and schemas</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses relational tables, tuples, and schemas as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect relational tables, tuples, and schemas to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply relational tables, tuples, and schemas while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Relational tables</span><span class="chip">tuples</span><span class="chip">schemas</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Relational tables</li><li>tuples</li><li>schemas</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on relational tables, tuples, and schemas when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using relational tables, tuples, and schemas, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 3</p>
+            <h3>Primary keys, foreign keys, and relationships</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses primary keys, foreign keys, and relationships as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect primary keys, foreign keys, and relationships to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply primary keys, foreign keys, and relationships while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Primary keys</span><span class="chip">foreign keys</span><span class="chip">relationships</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Primary keys</li><li>foreign keys</li><li>relationships</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on primary keys, foreign keys, and relationships when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using primary keys, foreign keys, and relationships, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 4</p>
+            <h3>Entity-relationship modeling and conceptual design</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses entity-relationship modeling and conceptual design as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect entity-relationship modeling and conceptual design to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply entity-relationship modeling and conceptual design while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Entity-relationship modeling</span><span class="chip">conceptual design</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Entity-relationship modeling</li><li>conceptual design</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on entity-relationship modeling and conceptual design when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using entity-relationship modeling and conceptual design, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 5</p>
+            <h3>Normalization and anomaly reduction</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses normalization and anomaly reduction as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect normalization and anomaly reduction to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply normalization and anomaly reduction while building or improving a device or network troubleshooting case. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Normalization</span><span class="chip">anomaly reduction</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Normalization</li><li>anomaly reduction</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on normalization and anomaly reduction when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising an AI-assisted product feature. By using normalization and anomaly reduction, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 6</p>
+            <h3>SQL querying with filtering and aggregation</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses sql querying with filtering and aggregation as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect sql querying with filtering and aggregation to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply sql querying with filtering and aggregation while building or improving an AI-assisted product feature. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">SQL querying</span><span class="chip">filtering</span><span class="chip">aggregation</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>SQL querying</li><li>filtering</li><li>aggregation</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on sql querying with filtering and aggregation when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a student information platform. By using sql querying with filtering and aggregation, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 7</p>
+            <h3>Joins, subqueries, and multi-table reasoning</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses joins, subqueries, and multi-table reasoning as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect joins, subqueries, and multi-table reasoning to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply joins, subqueries, and multi-table reasoning while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Joins</span><span class="chip">subqueries</span><span class="chip">multi-table reasoning</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Joins</li><li>subqueries</li><li>multi-table reasoning</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on joins, subqueries, and multi-table reasoning when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using joins, subqueries, and multi-table reasoning, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 8</p>
+            <h3>Indexes and performance basics</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses indexes and performance basics as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect indexes and performance basics to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply indexes and performance basics while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Indexes</span><span class="chip">performance basics</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Indexes</li><li>performance basics</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on indexes and performance basics when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using indexes and performance basics, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 9</p>
+            <h3>Transactions, ACID, and concurrency foundations</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses transactions, acid, and concurrency foundations as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect transactions, acid, and concurrency foundations to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply transactions, acid, and concurrency foundations while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Transactions</span><span class="chip">ACID</span><span class="chip">concurrency foundations</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Transactions</li><li>ACID</li><li>concurrency foundations</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on transactions, acid, and concurrency foundations when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using transactions, acid, and concurrency foundations, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 10</p>
+            <h3>Security, backup, recovery, and a NoSQL introduction</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Database Management Systems uses security, backup, recovery, and a nosql introduction as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect security, backup, recovery, and a nosql introduction to the broader data and analytics pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply security, backup, recovery, and a nosql introduction while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Security</span><span class="chip">backup</span><span class="chip">recovery</span><span class="chip">a NoSQL introduction</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Security</li><li>backup</li><li>recovery</li><li>a NoSQL introduction</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on security, backup, recovery, and a nosql introduction when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using security, backup, recovery, and a nosql introduction, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="deep-dives"><span class="section-badge">04</span><div><h2>Deep-Dive Lessons</h2><p>Major themes are unpacked from beginner view to advanced notes, with simple HTML/CSS diagrams for structure.</p></div></div>
+    <div class="diagram-box card">
+      <h3>Database Management Systems Concept Map</h3>
+      <div class="flow-diagram">
+        <div class="flow-node">Database purpose and file-system limitations</div><div class="flow-arrow">→</div><div class="flow-node">Relational tables, tuples, and schemas</div><div class="flow-arrow">→</div><div class="flow-node">Primary keys, foreign keys, and relationships</div><div class="flow-arrow">→</div><div class="flow-node">Entity-relationship modeling and conceptual design</div>
+      </div>
+      <p class="muted">Read the diagram left to right: foundational ideas support system design, implementation, and evaluation.</p>
+    </div>
+    <div class="grid three-col">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 1</p>
+        <h3>Database purpose and file-system limitations</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat database purpose and file-system limitations as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Database Management Systems.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to database purpose and file-system limitations. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map database purpose and file-system limitations onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 2</p>
+        <h3>Relational tables, tuples, and schemas</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat relational tables, tuples, and schemas as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Database Management Systems.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to relational tables, tuples, and schemas. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map relational tables, tuples, and schemas onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 3</p>
+        <h3>Primary keys, foreign keys, and relationships</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat primary keys, foreign keys, and relationships as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Database Management Systems.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to primary keys, foreign keys, and relationships. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map primary keys, foreign keys, and relationships onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    </div>
+    <div class="section-header" id="code-examples"><span class="section-badge">05</span><div><h2>Code Examples</h2><p>Step-by-step walkthroughs connect ideas to executable artifacts.</p></div></div>
+    <div class="stack-lg">
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Creating Related Tables with Primary and Foreign Keys</h3>
+              <p>SQL example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>CREATE TABLE students (
+    student_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    cohort TEXT NOT NULL
+);
+
+CREATE TABLE enrollments (
+    enrollment_id INTEGER PRIMARY KEY,
+    student_id INTEGER NOT NULL,
+    course_code TEXT NOT NULL,
+    grade TEXT,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Give each table a primary key so rows can be identified uniquely.</li><li>Use a foreign key to connect enrollment rows back to the correct student.</li><li>Mark essential columns as NOT NULL to prevent incomplete records.</li><li>Think about how structure choices affect data quality before inserting data.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>Two related tables are created successfully.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Combining Data with a Join and Aggregation</h3>
+              <p>SQL example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>SELECT s.name, COUNT(e.course_code) AS courses_taken
+FROM students s
+LEFT JOIN enrollments e
+    ON s.student_id = e.student_id
+GROUP BY s.student_id, s.name
+ORDER BY courses_taken DESC;</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Start from the student table because every result row should represent a student.</li><li>Use a LEFT JOIN to keep students even if they currently have zero enrollments.</li><li>Aggregate by student so repeated enrollment rows become one summary row.</li><li>Sort the final result to make comparison easier for users or analysts.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>Returns each student name alongside the number of enrolled courses.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+    <div class="section-header" id="activities"><span class="section-badge">06</span><div><h2>Practice Activities</h2><p>These activities help move from passive reading to active use of the ideas.</p></div></div>
+    <div class="stack-lg">
+      <article class="card activity-card">
+        <h3>Practice Activity 1: Database purpose and file-system limitations</h3>
+        <p><strong>Objective:</strong> Use database purpose and file-system limitations to move from explanation to applied reasoning in Database Management Systems.</p>
+        <p><strong>Tools Required:</strong> SQLite, PostgreSQL, or MySQL plus an ER diagram tool.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind database purpose and file-system limitations and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of database purpose and file-system limitations in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made database purpose and file-system limitations easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 2: Relational tables, tuples, and schemas</h3>
+        <p><strong>Objective:</strong> Use relational tables, tuples, and schemas to move from explanation to applied reasoning in Database Management Systems.</p>
+        <p><strong>Tools Required:</strong> SQLite, PostgreSQL, or MySQL plus an ER diagram tool.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind relational tables, tuples, and schemas and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of relational tables, tuples, and schemas in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made relational tables, tuples, and schemas easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 3: Primary keys, foreign keys, and relationships</h3>
+        <p><strong>Objective:</strong> Use primary keys, foreign keys, and relationships to move from explanation to applied reasoning in Database Management Systems.</p>
+        <p><strong>Tools Required:</strong> SQLite, PostgreSQL, or MySQL plus an ER diagram tool.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind primary keys, foreign keys, and relationships and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of primary keys, foreign keys, and relationships in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made primary keys, foreign keys, and relationships easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 4: Entity-relationship modeling and conceptual design</h3>
+        <p><strong>Objective:</strong> Use entity-relationship modeling and conceptual design to move from explanation to applied reasoning in Database Management Systems.</p>
+        <p><strong>Tools Required:</strong> SQLite, PostgreSQL, or MySQL plus an ER diagram tool.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind entity-relationship modeling and conceptual design and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of entity-relationship modeling and conceptual design in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made entity-relationship modeling and conceptual design easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 5: Normalization and anomaly reduction</h3>
+        <p><strong>Objective:</strong> Use normalization and anomaly reduction to move from explanation to applied reasoning in Database Management Systems.</p>
+        <p><strong>Tools Required:</strong> SQLite, PostgreSQL, or MySQL plus an ER diagram tool.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind normalization and anomaly reduction and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of normalization and anomaly reduction in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made normalization and anomaly reduction easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="assignments"><span class="section-badge">07</span><div><h2>Assignments</h2><p>Each assignment expects explanation, evidence, and reflection rather than rote answers.</p></div></div>
+    <div class="grid two-col">
+      <article class="card assignment-card">
+        <h3>Assignment 1: Concept mastery brief using Database purpose and file-system limitations</h3>
+        <p><strong>Task Description:</strong> Investigate database purpose and file-system limitations and produce a structured response that shows both conceptual understanding and applied judgment within Database Management Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 2: Comparative analysis using Primary keys, foreign keys, and relationships</h3>
+        <p><strong>Task Description:</strong> Investigate primary keys, foreign keys, and relationships and produce a structured response that shows both conceptual understanding and applied judgment within Database Management Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 3: Applied implementation or design task using Normalization and anomaly reduction</h3>
+        <p><strong>Task Description:</strong> Investigate normalization and anomaly reduction and produce a structured response that shows both conceptual understanding and applied judgment within Database Management Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 4: Case-study critique using Joins, subqueries, and multi-table reasoning</h3>
+        <p><strong>Task Description:</strong> Investigate joins, subqueries, and multi-table reasoning and produce a structured response that shows both conceptual understanding and applied judgment within Database Management Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 5: Integrative final assignment using Transactions, ACID, and concurrency foundations</h3>
+        <p><strong>Task Description:</strong> Investigate transactions, acid, and concurrency foundations and produce a structured response that shows both conceptual understanding and applied judgment within Database Management Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    </div>
+    <div class="section-header" id="quiz"><span class="section-badge">08</span><div><h2>Quiz Section</h2><p>Twenty multiple-choice questions check both concept recognition and practical judgment.</p></div></div>
+    <div class="stack-lg">
+      <div class="grid two-col">
+        <article class="card quiz-card">
+          <h3>Q1. In Database Management Systems, what is the main value of database purpose and file-system limitations?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q2. Which situation best demonstrates database purpose and file-system limitations in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q3. In Database Management Systems, what is the main value of relational tables, tuples, and schemas?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q4. Which situation best demonstrates relational tables, tuples, and schemas in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q5. In Database Management Systems, what is the main value of primary keys, foreign keys, and relationships?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q6. Which situation best demonstrates primary keys, foreign keys, and relationships in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q7. In Database Management Systems, what is the main value of entity-relationship modeling and conceptual design?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q8. Which situation best demonstrates entity-relationship modeling and conceptual design in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q9. In Database Management Systems, what is the main value of normalization and anomaly reduction?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q10. Which situation best demonstrates normalization and anomaly reduction in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q11. In Database Management Systems, what is the main value of sql querying with filtering and aggregation?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q12. Which situation best demonstrates sql querying with filtering and aggregation in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q13. In Database Management Systems, what is the main value of joins, subqueries, and multi-table reasoning?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q14. Which situation best demonstrates joins, subqueries, and multi-table reasoning in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q15. In Database Management Systems, what is the main value of indexes and performance basics?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q16. Which situation best demonstrates indexes and performance basics in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q17. In Database Management Systems, what is the main value of transactions, acid, and concurrency foundations?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q18. Which situation best demonstrates transactions, acid, and concurrency foundations in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q19. In Database Management Systems, what is the main value of security, backup, recovery, and a nosql introduction?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q20. Which situation best demonstrates security, backup, recovery, and a nosql introduction in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      </div>
+      <article class="card answer-key">
+        <h3>Answer Key with Explanations</h3>
+        <div class="stack-md"><p><strong>Q1:</strong> A — Database purpose and file-system limitations matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q2:</strong> A — A realistic use of database purpose and file-system limitations involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q3:</strong> A — Relational tables, tuples, and schemas matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q4:</strong> A — A realistic use of relational tables, tuples, and schemas involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q5:</strong> A — Primary keys, foreign keys, and relationships matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q6:</strong> A — A realistic use of primary keys, foreign keys, and relationships involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q7:</strong> A — Entity-relationship modeling and conceptual design matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q8:</strong> A — A realistic use of entity-relationship modeling and conceptual design involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q9:</strong> A — Normalization and anomaly reduction matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q10:</strong> A — A realistic use of normalization and anomaly reduction involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q11:</strong> A — SQL querying with filtering and aggregation matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q12:</strong> A — A realistic use of sql querying with filtering and aggregation involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q13:</strong> A — Joins, subqueries, and multi-table reasoning matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q14:</strong> A — A realistic use of joins, subqueries, and multi-table reasoning involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q15:</strong> A — Indexes and performance basics matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q16:</strong> A — A realistic use of indexes and performance basics involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q17:</strong> A — Transactions, ACID, and concurrency foundations matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q18:</strong> A — A realistic use of transactions, acid, and concurrency foundations involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q19:</strong> A — Security, backup, recovery, and a NoSQL introduction matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q20:</strong> A — A realistic use of security, backup, recovery, and a nosql introduction involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p></div>
+      </article>
+    </div>
+    <div class="section-header" id="final-project"><span class="section-badge">09</span><div><h2>Final Project or Assessment</h2><p>This culminating task asks the learner to demonstrate integrated understanding rather than isolated recall.</p></div></div>
+    <article class="card">
+      <p><strong>Project Objective:</strong> Synthesize the most important ideas from Database Management Systems into one coherent, evidence-based artifact.</p>
+      <p><strong>Scenario:</strong> You are advising a small team that needs to apply database management systems to a realistic problem with clear constraints and measurable outcomes.</p>
+      <h3>Requirements</h3>
+      <ul><li>Use at least three major topics from the course and explain why each one matters.</li><li>Create a concrete artifact such as a program, design, model, report, experiment, or architecture proposal.</li><li>Include testing, evaluation, or reflection criteria so quality can be judged transparently.</li><li>Document assumptions, trade-offs, and future improvements.</li></ul>
+      <h3>Step-by-Step Build Plan</h3>
+      <ol><li>Choose a realistic problem statement and define what success looks like.</li><li>Break the work into milestones tied to specific course concepts.</li><li>Build and review the core artifact iteratively rather than all at once.</li><li>Evaluate the result with evidence such as tests, traces, feedback, or metrics.</li><li>Package the final deliverable with documentation and a presentation-ready summary.</li></ol>
+      <p><strong>Deliverables:</strong> A final artifact, short technical report, demonstration summary, and evaluation evidence for Database Management Systems.</p>
+      <h3>Rubric</h3>
+      <ul><li>Problem framing and relevance</li><li>Correct use of course concepts</li><li>Technical quality or analytical rigor</li><li>Documentation and communication clarity</li><li>Reflection, testing, and improvement planning</li></ul>
+    </article>
+    <div class="section-header" id="summary"><span class="section-badge">10</span><div><h2>Summary</h2><p>Close the loop by reviewing what you learned, what to study next, and how this course connects forward.</p></div></div>
+    <article class="card">
+      <p>Database Management Systems helps learners build durable skill in data and analytics. Across the semester, the course moves from first-principles understanding into applied reasoning, structured practice, and more confident decision-making.</p>
+      <p><strong>What to study next:</strong> Revisit your weakest module, rebuild one example from memory, then extend it with a new constraint such as scale, security, cost, usability, or uncertainty.</p>
+      <p><strong>Connection to future semesters:</strong> This course supports later work such as Probability and Statistics for Computer Science, Lab: Database Management Systems, Data Warehousing and Data Mining. Treat your notes, assignments, and project artifacts here as reusable building blocks rather than one-time submissions.</p>
+    </article>
+    <div class="section-header" id="references"><span class="section-badge">11</span><div><h2>References and Further Study</h2><p>These are real public resources and established books that can support self-paced study beyond the course page.</p></div></div>
+    <div class="grid two-col">
+      <article class="card">
+        <h3>Recommended Books</h3>
+        <ul><li>Database System Concepts by Silberschatz, Korth, and Sudarshan</li><li>Learning SQL by Alan Beaulieu</li></ul>
+      </article>
+      <article class="card">
+        <h3>Websites and Documentation</h3>
+        <ul><li><a href="https://www.postgresql.org/docs/" target="_blank" rel="noreferrer">PostgreSQL Documentation</a></li><li><a href="https://sqlbolt.com/" target="_blank" rel="noreferrer">SQLBolt</a></li><li><a href="https://www.sqlite.org/docs.html" target="_blank" rel="noreferrer">SQLite Documentation</a></li></ul>
+        <h4>Practice Platforms</h4>
+        <ul><li><a href="https://mode.com/sql-tutorial/" target="_blank" rel="noreferrer">Mode SQL Tutorial</a></li><li><a href="https://www.khanacademy.org/computing/computer-programming/sql" target="_blank" rel="noreferrer">Khan Academy SQL</a></li></ul>
+      </article>
+    </div>
+    <section class="card nav-footer">
+      <h3>Course Navigation</h3>
+      <div class="footer-links">
+        <a class="button button-secondary" href="../index.html">Program Home</a>
+        <a class="button button-secondary" href="index.html">Semester Overview</a>
+        <a class="button button-secondary" href="design-analysis-algorithms.html">← Design and Analysis of Algorithms</a>
+        <a class="button" href="operating-systems.html">Operating Systems →</a>
+      </div>
+    </section></section>
+    </div>
+  </main>
+  <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <script src="../script.js"></script>
+</body>
+</html>

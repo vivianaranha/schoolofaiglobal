@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operating Systems | Semester 3: Algorithms, Databases, and Systems</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subject-page">
+  <div class="progress-bar" id="progress-bar"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">B.Sc. Computer Science Library</a>
+      <nav class="topnav">
+        <a href="../index.html">Program Home</a>
+        <a href="../semester-1/index.html">Semester 1</a><a href="../semester-2/index.html">Semester 2</a><a href="../semester-3/index.html">Semester 3</a><a href="../semester-4/index.html">Semester 4</a><a href="../semester-5/index.html">Semester 5</a><a href="../semester-6/index.html">Semester 6</a><a href="../semester-7/index.html">Semester 7</a><a href="../semester-8/index.html">Semester 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="hero card">
+    <div class="breadcrumbs"><a href="../index.html">Program Home</a><span>›</span><a href="index.html">Semester 3</a><span>›</span><a href="operating-systems.html">Operating Systems</a></div>
+    <p class="eyebrow">Semester 3 • Core</p>
+    <h1>Operating Systems</h1>
+    <p class="hero-copy">Operating Systems is a core course in semester 3 that explains how operating systems virtualize hardware and coordinate processes, memory, files, and devices.</p>
+    <div class="stat-row"><div class="stat-card"><span>Learning Outcomes</span><strong>10</strong></div><div class="stat-card"><span>Modules</span><strong>10</strong></div><div class="stat-card"><span>Activities</span><strong>5</strong></div><div class="stat-card"><span>Quiz Questions</span><strong>20</strong></div></div>
+  </section>
+    
+    <div class="content-layout">
+      <aside class="sidebar card sticky"><div class="sidebar-block"><p class="eyebrow">Navigate</p><h3>Operating Systems</h3><p class="sidebar-meta">Semester 3 • Core</p></div><nav class="toc"><a href="#learning-outcomes">Learning Outcomes</a><a href="#modules">Course Modules</a><a href="#deep-dives">Deep-Dive Lessons</a><a href="#code-examples">Code Examples</a><a href="#activities">Practice Activities</a><a href="#assignments">Assignments</a><a href="#quiz">Quiz</a><a href="#final-project">Final Project</a><a href="#summary">Summary</a><a href="#references">References</a></nav><div class="sidebar-block"><p class="eyebrow">Quick Links</p><a class="small-link" href="../index.html">Program Home</a><a class="small-link" href="index.html">Semester Overview</a></div></aside>
+      <section class="main-column">
+    <section class="card">
+      <div class="section-header" id="learning-outcomes"><span class="section-badge">02</span><div><h2>Learning Outcomes</h2><p>By the end of this subject, a self-paced learner should be able to do the following with confidence.</p></div></div>
+      <ul class="outcomes-list"><li>Explain operating-system roles and kernel services within realistic operating systems scenarios.</li><li>Apply processes, threads, and execution contexts within realistic operating systems scenarios.</li><li>Analyze cpu scheduling goals and algorithms within realistic operating systems scenarios.</li><li>Design synchronization and shared-resource coordination within realistic operating systems scenarios.</li><li>Evaluate deadlocks, starvation, and resource allocation within realistic operating systems scenarios.</li><li>Interpret memory management and allocation strategies within realistic operating systems scenarios.</li><li>Implement virtual memory and address-space abstraction within realistic operating systems scenarios.</li><li>Compare file systems and storage organization within realistic operating systems scenarios.</li><li>Troubleshoot input-output, system calls, and device management within realistic operating systems scenarios.</li><li>Connect security, permissions, and performance observation within realistic operating systems scenarios.</li></ul>
+    </section>
+    <div class="section-header" id="modules"><span class="section-badge">03</span><div><h2>Course Modules</h2><p>Ten content-rich modules move from beginner explanations to deeper reasoning, practical examples, and mini exercises.</p></div></div>
+    <div class="stack-lg">
+      <article class="card module-card " data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 1</p>
+            <h3>Operating-system roles and kernel services</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Collapse</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses operating-system roles and kernel services as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect operating-system roles and kernel services to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply operating-system roles and kernel services while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Operating-system roles</span><span class="chip">kernel services</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Operating-system roles</li><li>kernel services</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on operating-system roles and kernel services when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using operating-system roles and kernel services, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 2</p>
+            <h3>Processes, threads, and execution contexts</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses processes, threads, and execution contexts as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect processes, threads, and execution contexts to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply processes, threads, and execution contexts while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Processes</span><span class="chip">threads</span><span class="chip">execution contexts</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Processes</li><li>threads</li><li>execution contexts</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on processes, threads, and execution contexts when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using processes, threads, and execution contexts, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 3</p>
+            <h3>CPU scheduling goals and algorithms</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses cpu scheduling goals and algorithms as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect cpu scheduling goals and algorithms to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply cpu scheduling goals and algorithms while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">CPU scheduling goals</span><span class="chip">algorithms</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>CPU scheduling goals</li><li>algorithms</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on cpu scheduling goals and algorithms when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using cpu scheduling goals and algorithms, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 4</p>
+            <h3>Synchronization and shared-resource coordination</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses synchronization and shared-resource coordination as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect synchronization and shared-resource coordination to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply synchronization and shared-resource coordination while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Synchronization</span><span class="chip">shared-resource coordination</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Synchronization</li><li>shared-resource coordination</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on synchronization and shared-resource coordination when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using synchronization and shared-resource coordination, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 5</p>
+            <h3>Deadlocks, starvation, and resource allocation</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses deadlocks, starvation, and resource allocation as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect deadlocks, starvation, and resource allocation to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply deadlocks, starvation, and resource allocation while building or improving a device or network troubleshooting case. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Deadlocks</span><span class="chip">starvation</span><span class="chip">resource allocation</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Deadlocks</li><li>starvation</li><li>resource allocation</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on deadlocks, starvation, and resource allocation when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising an AI-assisted product feature. By using deadlocks, starvation, and resource allocation, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 6</p>
+            <h3>Memory management and allocation strategies</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses memory management and allocation strategies as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect memory management and allocation strategies to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply memory management and allocation strategies while building or improving an AI-assisted product feature. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Memory management</span><span class="chip">allocation strategies</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Memory management</li><li>allocation strategies</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on memory management and allocation strategies when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a student information platform. By using memory management and allocation strategies, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 7</p>
+            <h3>Virtual memory and address-space abstraction</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses virtual memory and address-space abstraction as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect virtual memory and address-space abstraction to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply virtual memory and address-space abstraction while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Virtual memory</span><span class="chip">address-space abstraction</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Virtual memory</li><li>address-space abstraction</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on virtual memory and address-space abstraction when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using virtual memory and address-space abstraction, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 8</p>
+            <h3>File systems and storage organization</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses file systems and storage organization as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect file systems and storage organization to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply file systems and storage organization while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">File systems</span><span class="chip">storage organization</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>File systems</li><li>storage organization</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on file systems and storage organization when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using file systems and storage organization, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 9</p>
+            <h3>Input-output, system calls, and device management</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses input-output, system calls, and device management as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect input-output, system calls, and device management to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply input-output, system calls, and device management while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Input-output</span><span class="chip">system calls</span><span class="chip">device management</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Input-output</li><li>system calls</li><li>device management</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on input-output, system calls, and device management when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using input-output, system calls, and device management, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 10</p>
+            <h3>Security, permissions, and performance observation</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Operating Systems uses security, permissions, and performance observation as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect security, permissions, and performance observation to the broader systems and infrastructure pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 3: Algorithms, Databases, and Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply security, permissions, and performance observation while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Security</span><span class="chip">permissions</span><span class="chip">performance observation</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Security</li><li>permissions</li><li>performance observation</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on security, permissions, and performance observation when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using security, permissions, and performance observation, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="deep-dives"><span class="section-badge">04</span><div><h2>Deep-Dive Lessons</h2><p>Major themes are unpacked from beginner view to advanced notes, with simple HTML/CSS diagrams for structure.</p></div></div>
+    <div class="diagram-box card">
+      <h3>Operating Systems Concept Map</h3>
+      <div class="flow-diagram">
+        <div class="flow-node">Operating-system roles and kernel services</div><div class="flow-arrow">→</div><div class="flow-node">Processes, threads, and execution contexts</div><div class="flow-arrow">→</div><div class="flow-node">CPU scheduling goals and algorithms</div><div class="flow-arrow">→</div><div class="flow-node">Synchronization and shared-resource coordination</div>
+      </div>
+      <p class="muted">Read the diagram left to right: foundational ideas support system design, implementation, and evaluation.</p>
+    </div>
+    <div class="grid three-col">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 1</p>
+        <h3>Operating-system roles and kernel services</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat operating-system roles and kernel services as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Operating Systems.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to operating-system roles and kernel services. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map operating-system roles and kernel services onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 2</p>
+        <h3>Processes, threads, and execution contexts</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat processes, threads, and execution contexts as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Operating Systems.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to processes, threads, and execution contexts. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map processes, threads, and execution contexts onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 3</p>
+        <h3>CPU scheduling goals and algorithms</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat cpu scheduling goals and algorithms as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Operating Systems.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to cpu scheduling goals and algorithms. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map cpu scheduling goals and algorithms onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    </div>
+    <div class="section-header" id="code-examples"><span class="section-badge">05</span><div><h2>Code Examples</h2><p>Step-by-step walkthroughs connect ideas to executable artifacts.</p></div></div>
+    <div class="stack-lg">
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Inspecting Running Processes from the Shell</h3>
+              <p>BASH example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>ps -ef | grep python
+
+TOP_PID=$(pgrep -f &quot;web-server&quot; | head -n 1)
+if [ -n &quot;$TOP_PID&quot; ]; then
+  echo &quot;Server process found: $TOP_PID&quot;
+else
+  echo &quot;Server process not running&quot;
+fi</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>List processes and filter them so you can focus on the service you care about.</li><li>Capture a process identifier in a variable for later checks or automation.</li><li>Use a conditional test to produce a clear status message.</li><li>Treat shell commands as building blocks for repeatable system inspection.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>Shows matching processes and reports whether the target service is active.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Understanding Permissions Through a Small Script</h3>
+              <p>BASH example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>touch report.txt
+chmod 640 report.txt
+ls -l report.txt
+
+if [ -r report.txt ]; then
+  echo &quot;You can read the file&quot;
+fi</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Create a file so you can observe permission changes directly.</li><li>Apply a specific permission mask and inspect the symbolic representation.</li><li>Check read access programmatically instead of guessing.</li><li>Connect the command output to user, group, and other access rules.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>-rw-r----- ... report.txt\nYou can read the file</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+    <div class="section-header" id="activities"><span class="section-badge">06</span><div><h2>Practice Activities</h2><p>These activities help move from passive reading to active use of the ideas.</p></div></div>
+    <div class="stack-lg">
+      <article class="card activity-card">
+        <h3>Practice Activity 1: Operating-system roles and kernel services</h3>
+        <p><strong>Objective:</strong> Use operating-system roles and kernel services to move from explanation to applied reasoning in Operating Systems.</p>
+        <p><strong>Tools Required:</strong> A Linux environment, terminal, and process monitoring tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind operating-system roles and kernel services and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of operating-system roles and kernel services in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made operating-system roles and kernel services easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 2: Processes, threads, and execution contexts</h3>
+        <p><strong>Objective:</strong> Use processes, threads, and execution contexts to move from explanation to applied reasoning in Operating Systems.</p>
+        <p><strong>Tools Required:</strong> A Linux environment, terminal, and process monitoring tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind processes, threads, and execution contexts and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of processes, threads, and execution contexts in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made processes, threads, and execution contexts easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 3: CPU scheduling goals and algorithms</h3>
+        <p><strong>Objective:</strong> Use cpu scheduling goals and algorithms to move from explanation to applied reasoning in Operating Systems.</p>
+        <p><strong>Tools Required:</strong> A Linux environment, terminal, and process monitoring tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind cpu scheduling goals and algorithms and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of cpu scheduling goals and algorithms in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made cpu scheduling goals and algorithms easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 4: Synchronization and shared-resource coordination</h3>
+        <p><strong>Objective:</strong> Use synchronization and shared-resource coordination to move from explanation to applied reasoning in Operating Systems.</p>
+        <p><strong>Tools Required:</strong> A Linux environment, terminal, and process monitoring tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind synchronization and shared-resource coordination and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of synchronization and shared-resource coordination in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made synchronization and shared-resource coordination easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 5: Deadlocks, starvation, and resource allocation</h3>
+        <p><strong>Objective:</strong> Use deadlocks, starvation, and resource allocation to move from explanation to applied reasoning in Operating Systems.</p>
+        <p><strong>Tools Required:</strong> A Linux environment, terminal, and process monitoring tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind deadlocks, starvation, and resource allocation and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of deadlocks, starvation, and resource allocation in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made deadlocks, starvation, and resource allocation easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="assignments"><span class="section-badge">07</span><div><h2>Assignments</h2><p>Each assignment expects explanation, evidence, and reflection rather than rote answers.</p></div></div>
+    <div class="grid two-col">
+      <article class="card assignment-card">
+        <h3>Assignment 1: Concept mastery brief using Operating-system roles and kernel services</h3>
+        <p><strong>Task Description:</strong> Investigate operating-system roles and kernel services and produce a structured response that shows both conceptual understanding and applied judgment within Operating Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 2: Comparative analysis using CPU scheduling goals and algorithms</h3>
+        <p><strong>Task Description:</strong> Investigate cpu scheduling goals and algorithms and produce a structured response that shows both conceptual understanding and applied judgment within Operating Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 3: Applied implementation or design task using Deadlocks, starvation, and resource allocation</h3>
+        <p><strong>Task Description:</strong> Investigate deadlocks, starvation, and resource allocation and produce a structured response that shows both conceptual understanding and applied judgment within Operating Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 4: Case-study critique using Virtual memory and address-space abstraction</h3>
+        <p><strong>Task Description:</strong> Investigate virtual memory and address-space abstraction and produce a structured response that shows both conceptual understanding and applied judgment within Operating Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 5: Integrative final assignment using Input-output, system calls, and device management</h3>
+        <p><strong>Task Description:</strong> Investigate input-output, system calls, and device management and produce a structured response that shows both conceptual understanding and applied judgment within Operating Systems.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    </div>
+    <div class="section-header" id="quiz"><span class="section-badge">08</span><div><h2>Quiz Section</h2><p>Twenty multiple-choice questions check both concept recognition and practical judgment.</p></div></div>
+    <div class="stack-lg">
+      <div class="grid two-col">
+        <article class="card quiz-card">
+          <h3>Q1. In Operating Systems, what is the main value of operating-system roles and kernel services?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q2. Which situation best demonstrates operating-system roles and kernel services in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q3. In Operating Systems, what is the main value of processes, threads, and execution contexts?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q4. Which situation best demonstrates processes, threads, and execution contexts in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q5. In Operating Systems, what is the main value of cpu scheduling goals and algorithms?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q6. Which situation best demonstrates cpu scheduling goals and algorithms in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q7. In Operating Systems, what is the main value of synchronization and shared-resource coordination?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q8. Which situation best demonstrates synchronization and shared-resource coordination in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q9. In Operating Systems, what is the main value of deadlocks, starvation, and resource allocation?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q10. Which situation best demonstrates deadlocks, starvation, and resource allocation in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q11. In Operating Systems, what is the main value of memory management and allocation strategies?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q12. Which situation best demonstrates memory management and allocation strategies in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q13. In Operating Systems, what is the main value of virtual memory and address-space abstraction?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q14. Which situation best demonstrates virtual memory and address-space abstraction in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q15. In Operating Systems, what is the main value of file systems and storage organization?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q16. Which situation best demonstrates file systems and storage organization in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q17. In Operating Systems, what is the main value of input-output, system calls, and device management?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q18. Which situation best demonstrates input-output, system calls, and device management in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q19. In Operating Systems, what is the main value of security, permissions, and performance observation?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q20. Which situation best demonstrates security, permissions, and performance observation in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      </div>
+      <article class="card answer-key">
+        <h3>Answer Key with Explanations</h3>
+        <div class="stack-md"><p><strong>Q1:</strong> A — Operating-system roles and kernel services matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q2:</strong> A — A realistic use of operating-system roles and kernel services involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q3:</strong> A — Processes, threads, and execution contexts matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q4:</strong> A — A realistic use of processes, threads, and execution contexts involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q5:</strong> A — CPU scheduling goals and algorithms matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q6:</strong> A — A realistic use of cpu scheduling goals and algorithms involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q7:</strong> A — Synchronization and shared-resource coordination matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q8:</strong> A — A realistic use of synchronization and shared-resource coordination involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q9:</strong> A — Deadlocks, starvation, and resource allocation matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q10:</strong> A — A realistic use of deadlocks, starvation, and resource allocation involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q11:</strong> A — Memory management and allocation strategies matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q12:</strong> A — A realistic use of memory management and allocation strategies involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q13:</strong> A — Virtual memory and address-space abstraction matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q14:</strong> A — A realistic use of virtual memory and address-space abstraction involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q15:</strong> A — File systems and storage organization matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q16:</strong> A — A realistic use of file systems and storage organization involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q17:</strong> A — Input-output, system calls, and device management matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q18:</strong> A — A realistic use of input-output, system calls, and device management involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q19:</strong> A — Security, permissions, and performance observation matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q20:</strong> A — A realistic use of security, permissions, and performance observation involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p></div>
+      </article>
+    </div>
+    <div class="section-header" id="final-project"><span class="section-badge">09</span><div><h2>Final Project or Assessment</h2><p>This culminating task asks the learner to demonstrate integrated understanding rather than isolated recall.</p></div></div>
+    <article class="card">
+      <p><strong>Project Objective:</strong> Synthesize the most important ideas from Operating Systems into one coherent, evidence-based artifact.</p>
+      <p><strong>Scenario:</strong> You are advising a small team that needs to apply operating systems to a realistic problem with clear constraints and measurable outcomes.</p>
+      <h3>Requirements</h3>
+      <ul><li>Use at least three major topics from the course and explain why each one matters.</li><li>Create a concrete artifact such as a program, design, model, report, experiment, or architecture proposal.</li><li>Include testing, evaluation, or reflection criteria so quality can be judged transparently.</li><li>Document assumptions, trade-offs, and future improvements.</li></ul>
+      <h3>Step-by-Step Build Plan</h3>
+      <ol><li>Choose a realistic problem statement and define what success looks like.</li><li>Break the work into milestones tied to specific course concepts.</li><li>Build and review the core artifact iteratively rather than all at once.</li><li>Evaluate the result with evidence such as tests, traces, feedback, or metrics.</li><li>Package the final deliverable with documentation and a presentation-ready summary.</li></ol>
+      <p><strong>Deliverables:</strong> A final artifact, short technical report, demonstration summary, and evaluation evidence for Operating Systems.</p>
+      <h3>Rubric</h3>
+      <ul><li>Problem framing and relevance</li><li>Correct use of course concepts</li><li>Technical quality or analytical rigor</li><li>Documentation and communication clarity</li><li>Reflection, testing, and improvement planning</li></ul>
+    </article>
+    <div class="section-header" id="summary"><span class="section-badge">10</span><div><h2>Summary</h2><p>Close the loop by reviewing what you learned, what to study next, and how this course connects forward.</p></div></div>
+    <article class="card">
+      <p>Operating Systems helps learners build durable skill in systems and infrastructure. Across the semester, the course moves from first-principles understanding into applied reasoning, structured practice, and more confident decision-making.</p>
+      <p><strong>What to study next:</strong> Revisit your weakest module, rebuild one example from memory, then extend it with a new constraint such as scale, security, cost, usability, or uncertainty.</p>
+      <p><strong>Connection to future semesters:</strong> This course supports later work such as Computer Networks I, Lab: Operating Systems, Computer Networks II. Treat your notes, assignments, and project artifacts here as reusable building blocks rather than one-time submissions.</p>
+    </article>
+    <div class="section-header" id="references"><span class="section-badge">11</span><div><h2>References and Further Study</h2><p>These are real public resources and established books that can support self-paced study beyond the course page.</p></div></div>
+    <div class="grid two-col">
+      <article class="card">
+        <h3>Recommended Books</h3>
+        <ul><li>Operating Systems: Three Easy Pieces</li><li>Computer Systems: A Programmer's Perspective by Bryant and O'Hallaron</li></ul>
+      </article>
+      <article class="card">
+        <h3>Websites and Documentation</h3>
+        <ul><li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" rel="noreferrer">OSTEP</a></li><li><a href="https://linuxjourney.com/" target="_blank" rel="noreferrer">Linux Journey</a></li><li><a href="https://man7.org/linux/man-pages/" target="_blank" rel="noreferrer">man7 Linux Manual Pages</a></li></ul>
+        <h4>Practice Platforms</h4>
+        <ul><li><a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noreferrer">OverTheWire Bandit</a></li><li><a href="https://www.gnu.org/software/bash/manual/" target="_blank" rel="noreferrer">GNU Bash Manual</a></li></ul>
+      </article>
+    </div>
+    <section class="card nav-footer">
+      <h3>Course Navigation</h3>
+      <div class="footer-links">
+        <a class="button button-secondary" href="../index.html">Program Home</a>
+        <a class="button button-secondary" href="index.html">Semester Overview</a>
+        <a class="button button-secondary" href="database-management-systems.html">← Database Management Systems</a>
+        <a class="button" href="software-engineering-fundamentals.html">Software Engineering Fundamentals →</a>
+      </div>
+    </section></section>
+    </div>
+  </main>
+  <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <script src="../script.js"></script>
+</body>
+</html>

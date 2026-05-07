@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing Fundamentals | Semester 5: Artificial Intelligence and Advanced Systems</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subject-page">
+  <div class="progress-bar" id="progress-bar"></div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">B.Sc. Computer Science Library</a>
+      <nav class="topnav">
+        <a href="../index.html">Program Home</a>
+        <a href="../semester-1/index.html">Semester 1</a><a href="../semester-2/index.html">Semester 2</a><a href="../semester-3/index.html">Semester 3</a><a href="../semester-4/index.html">Semester 4</a><a href="../semester-5/index.html">Semester 5</a><a href="../semester-6/index.html">Semester 6</a><a href="../semester-7/index.html">Semester 7</a><a href="../semester-8/index.html">Semester 8</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="hero card">
+    <div class="breadcrumbs"><a href="../index.html">Program Home</a><span>›</span><a href="index.html">Semester 5</a><span>›</span><a href="cloud-computing-fundamentals.html">Cloud Computing Fundamentals</a></div>
+    <p class="eyebrow">Semester 5 • Core</p>
+    <h1>Cloud Computing Fundamentals</h1>
+    <p class="hero-copy">Cloud Computing Fundamentals is a core course in semester 5 that introduces cloud service models, virtualization, containers, security, and operational trade-offs.</p>
+    <div class="stat-row"><div class="stat-card"><span>Learning Outcomes</span><strong>10</strong></div><div class="stat-card"><span>Modules</span><strong>10</strong></div><div class="stat-card"><span>Activities</span><strong>5</strong></div><div class="stat-card"><span>Quiz Questions</span><strong>20</strong></div></div>
+  </section>
+    
+    <div class="content-layout">
+      <aside class="sidebar card sticky"><div class="sidebar-block"><p class="eyebrow">Navigate</p><h3>Cloud Computing Fundamentals</h3><p class="sidebar-meta">Semester 5 • Core</p></div><nav class="toc"><a href="#learning-outcomes">Learning Outcomes</a><a href="#modules">Course Modules</a><a href="#deep-dives">Deep-Dive Lessons</a><a href="#code-examples">Code Examples</a><a href="#activities">Practice Activities</a><a href="#assignments">Assignments</a><a href="#quiz">Quiz</a><a href="#final-project">Final Project</a><a href="#summary">Summary</a><a href="#references">References</a></nav><div class="sidebar-block"><p class="eyebrow">Quick Links</p><a class="small-link" href="../index.html">Program Home</a><a class="small-link" href="index.html">Semester Overview</a></div></aside>
+      <section class="main-column">
+    <section class="card">
+      <div class="section-header" id="learning-outcomes"><span class="section-badge">02</span><div><h2>Learning Outcomes</h2><p>By the end of this subject, a self-paced learner should be able to do the following with confidence.</p></div></div>
+      <ul class="outcomes-list"><li>Explain cloud computing models and business value within realistic cloud computing fundamentals scenarios.</li><li>Apply public, private, and hybrid deployment options within realistic cloud computing fundamentals scenarios.</li><li>Analyze virtual machines and isolation concepts within realistic cloud computing fundamentals scenarios.</li><li>Design containers and lightweight packaging within realistic cloud computing fundamentals scenarios.</li><li>Evaluate cloud storage and managed databases within realistic cloud computing fundamentals scenarios.</li><li>Interpret networking in cloud environments within realistic cloud computing fundamentals scenarios.</li><li>Implement serverless computing and event-driven execution within realistic cloud computing fundamentals scenarios.</li><li>Compare identity, access, and cloud security basics within realistic cloud computing fundamentals scenarios.</li><li>Troubleshoot cost management and operational visibility within realistic cloud computing fundamentals scenarios.</li><li>Connect comparing aws, azure, and google cloud offerings within realistic cloud computing fundamentals scenarios.</li></ul>
+    </section>
+    <div class="section-header" id="modules"><span class="section-badge">03</span><div><h2>Course Modules</h2><p>Ten content-rich modules move from beginner explanations to deeper reasoning, practical examples, and mini exercises.</p></div></div>
+    <div class="stack-lg">
+      <article class="card module-card " data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 1</p>
+            <h3>Cloud computing models and business value</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Collapse</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses cloud computing models and business value as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect cloud computing models and business value to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply cloud computing models and business value while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Cloud computing models</span><span class="chip">business value</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Cloud computing models</li><li>business value</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on cloud computing models and business value when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using cloud computing models and business value, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 2</p>
+            <h3>Public, private, and hybrid deployment options</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses public, private, and hybrid deployment options as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect public, private, and hybrid deployment options to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply public, private, and hybrid deployment options while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Public</span><span class="chip">private</span><span class="chip">hybrid deployment options</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Public</li><li>private</li><li>hybrid deployment options</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on public, private, and hybrid deployment options when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using public, private, and hybrid deployment options, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 3</p>
+            <h3>Virtual machines and isolation concepts</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses virtual machines and isolation concepts as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect virtual machines and isolation concepts to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply virtual machines and isolation concepts while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Virtual machines</span><span class="chip">isolation concepts</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Virtual machines</li><li>isolation concepts</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on virtual machines and isolation concepts when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using virtual machines and isolation concepts, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 4</p>
+            <h3>Containers and lightweight packaging</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses containers and lightweight packaging as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect containers and lightweight packaging to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply containers and lightweight packaging while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Containers</span><span class="chip">lightweight packaging</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Containers</li><li>lightweight packaging</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on containers and lightweight packaging when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using containers and lightweight packaging, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 5</p>
+            <h3>Cloud storage and managed databases</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses cloud storage and managed databases as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect cloud storage and managed databases to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply cloud storage and managed databases while building or improving a device or network troubleshooting case. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Cloud storage</span><span class="chip">managed databases</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Cloud storage</li><li>managed databases</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on cloud storage and managed databases when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising an AI-assisted product feature. By using cloud storage and managed databases, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 6</p>
+            <h3>Networking in cloud environments</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses networking in cloud environments as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect networking in cloud environments to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply networking in cloud environments while building or improving an AI-assisted product feature. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Networking in cloud environments</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Networking in cloud environments</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on networking in cloud environments when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a student information platform. By using networking in cloud environments, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 7</p>
+            <h3>Serverless computing and event-driven execution</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses serverless computing and event-driven execution as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect serverless computing and event-driven execution to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply serverless computing and event-driven execution while building or improving a student information platform. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Serverless computing</span><span class="chip">event-driven execution</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Serverless computing</li><li>event-driven execution</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on serverless computing and event-driven execution when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a secure online service. By using serverless computing and event-driven execution, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Compare two alternatives and justify which one fits a given constraint best.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 8</p>
+            <h3>Identity, access, and cloud security basics</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses identity, access, and cloud security basics as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect identity, access, and cloud security basics to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply identity, access, and cloud security basics while building or improving a secure online service. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Identity</span><span class="chip">access</span><span class="chip">cloud security basics</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Identity</li><li>access</li><li>cloud security basics</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on identity, access, and cloud security basics when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a data-rich analytics workflow. By using identity, access, and cloud security basics, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Extend the example with one new requirement and explain how your approach changes.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 9</p>
+            <h3>Cost management and operational visibility</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses cost management and operational visibility as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect cost management and operational visibility to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply cost management and operational visibility while building or improving a data-rich analytics workflow. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Cost management</span><span class="chip">operational visibility</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Cost management</li><li>operational visibility</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on cost management and operational visibility when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a cloud-hosted application. By using cost management and operational visibility, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Write a short explanation in your own words and identify one misconception to avoid.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card module-card collapsed" data-module>
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Module 10</p>
+            <h3>Comparing AWS, Azure, and Google Cloud offerings</h3>
+          </div>
+          <button class="button button-secondary module-toggle" type="button">Expand</button>
+        </div>
+        <div class="module-content">
+          <p>Cloud Computing Fundamentals uses comparing aws, azure, and google cloud offerings as a building block for more advanced study. Start by understanding the plain-language purpose of the idea, the vocabulary attached to it, and the kinds of questions it helps us answer. In beginner-friendly terms, this module asks: what problem does this concept solve, and why would a computing professional care about it?</p><p>At a deeper level, we connect comparing aws, azure, and google cloud offerings to the broader cloud and distributed systems pathway. We examine the assumptions behind the concept, how it interacts with adjacent topics in Semester 5: Artificial Intelligence and Advanced Systems, and what changes when systems become larger, faster, more distributed, or more safety-critical. Strong students should look for trade-offs, limits, and edge cases rather than memorizing a single rule.</p><p>In practice, teams apply comparing aws, azure, and google cloud offerings while building or improving a cloud-hosted application. The value of the topic becomes obvious when design choices need to be justified, tested, documented, and communicated to collaborators.</p>
+          <div class="chip-row"><span class="chip">Comparing AWS</span><span class="chip">Azure</span><span class="chip">Google Cloud offerings</span></div>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Key Concepts</h4>
+              <ul><li>Comparing AWS</li><li>Azure</li><li>Google Cloud offerings</li></ul>
+              <h4>Real-World Relevance</h4>
+              <p>Professionals rely on comparing aws, azure, and google cloud offerings when they need dependable decisions about system behavior, performance, reliability, usability, or maintainability. It helps bridge classroom theory and implementation reality.</p>
+            </div>
+            <div>
+              <h4>Example or Case Study</h4>
+              <p>Case study: imagine a team revising a device or network troubleshooting case. By using comparing aws, azure, and google cloud offerings, the team can make the system more understandable, measurable, and easier to improve across future iterations.</p>
+              <div class="callout note"><strong>Mini Exercise:</strong> Create a small worked example, diagram, or trace that demonstrates the concept clearly.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="deep-dives"><span class="section-badge">04</span><div><h2>Deep-Dive Lessons</h2><p>Major themes are unpacked from beginner view to advanced notes, with simple HTML/CSS diagrams for structure.</p></div></div>
+    <div class="diagram-box card">
+      <h3>Cloud Computing Fundamentals Concept Map</h3>
+      <div class="flow-diagram">
+        <div class="flow-node">Cloud computing models and business value</div><div class="flow-arrow">→</div><div class="flow-node">Public, private, and hybrid deployment options</div><div class="flow-arrow">→</div><div class="flow-node">Virtual machines and isolation concepts</div><div class="flow-arrow">→</div><div class="flow-node">Containers and lightweight packaging</div>
+      </div>
+      <p class="muted">Read the diagram left to right: foundational ideas support system design, implementation, and evaluation.</p>
+    </div>
+    <div class="grid three-col">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 1</p>
+        <h3>Cloud computing models and business value</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat cloud computing models and business value as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Cloud Computing Fundamentals.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to cloud computing models and business value. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map cloud computing models and business value onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 2</p>
+        <h3>Public, private, and hybrid deployment options</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat public, private, and hybrid deployment options as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Cloud Computing Fundamentals.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to public, private, and hybrid deployment options. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map public, private, and hybrid deployment options onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson 3</p>
+        <h3>Virtual machines and isolation concepts</h3>
+        <p><strong>Beginner:</strong> Beginner view: treat virtual machines and isolation concepts as a concrete question about how a system behaves. Before formulas, frameworks, or implementation details, ask what inputs exist, what transformation is expected, and what a correct outcome looks like.</p>
+        <p><strong>Intermediate:</strong> Intermediate note: once the basic intuition is stable, pay attention to constraints such as scale, ambiguity, cost, performance, or human factors. These constraints explain why multiple valid approaches may exist inside Cloud Computing Fundamentals.</p>
+        <p><strong>Advanced:</strong> Advanced note: strong practitioners study trade-offs, failure modes, and formal guarantees related to virtual machines and isolation concepts. That is where the subject becomes professionally useful rather than academically descriptive.</p>
+        <div class="callout success"><strong>Practical Example:</strong> Worked example: map virtual machines and isolation concepts onto one realistic workflow from industry, then identify the assumptions, risks, and evidence you would gather before implementation.</div>
+      </article>
+    </div>
+    <div class="section-header" id="code-examples"><span class="section-badge">05</span><div><h2>Code Examples</h2><p>Step-by-step walkthroughs connect ideas to executable artifacts.</p></div></div>
+    <div class="stack-lg">
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Containerizing a Small Web Service</h3>
+              <p>DOCKERFILE example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD [&quot;npm&quot;, &quot;start&quot;]</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Choose a lightweight base image that already includes the runtime you need.</li><li>Set a working directory so later instructions remain consistent.</li><li>Copy dependency manifests first to improve rebuild performance through caching.</li><li>Expose the service port and define the startup command for deployment.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>Builds an image that installs dependencies and starts the app on port 3000.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+        <article class="card code-example">
+          <div class="card-topline">
+            <div>
+              <h3>Declaring a Scalable Deployment</h3>
+              <p>YAML example with explanation and expected behavior.</p>
+            </div>
+            <button class="button button-secondary copy-code" type="button">Copy Code</button>
+          </div>
+          <pre><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: course-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: course-api
+  template:
+    metadata:
+      labels:
+        app: course-api
+    spec:
+      containers:
+        - name: api
+          image: course-api:1.0
+          ports:
+            - containerPort: 3000</code></pre>
+          <div class="grid two-col details-grid">
+            <div>
+              <h4>Why This Works</h4>
+              <ul><li>Describe the desired system state rather than manually starting each container.</li><li>Use labels so services and scaling rules can target the correct pods.</li><li>Declare multiple replicas to improve availability and load distribution.</li><li>Treat deployment files as versioned infrastructure artifacts.</li></ul>
+            </div>
+            <div>
+              <h4>Expected Output</h4>
+              <pre class="output-block"><code>Kubernetes manages three matching application replicas.</code></pre>
+              <div class="callout tip"><strong>Try It Yourself:</strong> Change one variable, constraint, or input assumption and predict how the output should change before you run it.</div>
+            </div>
+          </div>
+        </article>
+      
+    </div>
+    <div class="section-header" id="activities"><span class="section-badge">06</span><div><h2>Practice Activities</h2><p>These activities help move from passive reading to active use of the ideas.</p></div></div>
+    <div class="stack-lg">
+      <article class="card activity-card">
+        <h3>Practice Activity 1: Cloud computing models and business value</h3>
+        <p><strong>Objective:</strong> Use cloud computing models and business value to move from explanation to applied reasoning in Cloud Computing Fundamentals.</p>
+        <p><strong>Tools Required:</strong> Cloud free tiers, Docker, and architecture drawing tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind cloud computing models and business value and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of cloud computing models and business value in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made cloud computing models and business value easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 2: Public, private, and hybrid deployment options</h3>
+        <p><strong>Objective:</strong> Use public, private, and hybrid deployment options to move from explanation to applied reasoning in Cloud Computing Fundamentals.</p>
+        <p><strong>Tools Required:</strong> Cloud free tiers, Docker, and architecture drawing tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind public, private, and hybrid deployment options and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of public, private, and hybrid deployment options in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made public, private, and hybrid deployment options easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 3: Virtual machines and isolation concepts</h3>
+        <p><strong>Objective:</strong> Use virtual machines and isolation concepts to move from explanation to applied reasoning in Cloud Computing Fundamentals.</p>
+        <p><strong>Tools Required:</strong> Cloud free tiers, Docker, and architecture drawing tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind virtual machines and isolation concepts and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of virtual machines and isolation concepts in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made virtual machines and isolation concepts easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 4: Containers and lightweight packaging</h3>
+        <p><strong>Objective:</strong> Use containers and lightweight packaging to move from explanation to applied reasoning in Cloud Computing Fundamentals.</p>
+        <p><strong>Tools Required:</strong> Cloud free tiers, Docker, and architecture drawing tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind containers and lightweight packaging and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of containers and lightweight packaging in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made containers and lightweight packaging easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card activity-card">
+        <h3>Practice Activity 5: Cloud storage and managed databases</h3>
+        <p><strong>Objective:</strong> Use cloud storage and managed databases to move from explanation to applied reasoning in Cloud Computing Fundamentals.</p>
+        <p><strong>Tools Required:</strong> Cloud free tiers, Docker, and architecture drawing tools.</p>
+        <div class="grid two-col details-grid">
+          <div>
+            <h4>Step-by-Step Instructions</h4>
+            <ol><li>Review the key idea behind cloud storage and managed databases and identify the assumptions you need before starting.</li><li>Complete a small guided task that applies the concept to data, code, diagrams, analysis, or design decisions.</li><li>Record results, note any confusion, and compare your outcome with an alternative approach.</li></ol>
+          </div>
+          <div>
+            <h4>Expected Outcome</h4>
+            <p>A concise artifact that demonstrates understanding of cloud storage and managed databases in a realistic context.</p>
+            <h4>Reflection Questions</h4>
+            <ul><li>What made cloud storage and managed databases easier or harder to apply than expected?</li><li>How would your approach change if the scale, users, or constraints changed?</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section-header" id="assignments"><span class="section-badge">07</span><div><h2>Assignments</h2><p>Each assignment expects explanation, evidence, and reflection rather than rote answers.</p></div></div>
+    <div class="grid two-col">
+      <article class="card assignment-card">
+        <h3>Assignment 1: Concept mastery brief using Cloud computing models and business value</h3>
+        <p><strong>Task Description:</strong> Investigate cloud computing models and business value and produce a structured response that shows both conceptual understanding and applied judgment within Cloud Computing Fundamentals.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 2: Comparative analysis using Virtual machines and isolation concepts</h3>
+        <p><strong>Task Description:</strong> Investigate virtual machines and isolation concepts and produce a structured response that shows both conceptual understanding and applied judgment within Cloud Computing Fundamentals.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 3: Applied implementation or design task using Cloud storage and managed databases</h3>
+        <p><strong>Task Description:</strong> Investigate cloud storage and managed databases and produce a structured response that shows both conceptual understanding and applied judgment within Cloud Computing Fundamentals.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 4: Case-study critique using Serverless computing and event-driven execution</h3>
+        <p><strong>Task Description:</strong> Investigate serverless computing and event-driven execution and produce a structured response that shows both conceptual understanding and applied judgment within Cloud Computing Fundamentals.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    
+      <article class="card assignment-card">
+        <h3>Assignment 5: Integrative final assignment using Cost management and operational visibility</h3>
+        <p><strong>Task Description:</strong> Investigate cost management and operational visibility and produce a structured response that shows both conceptual understanding and applied judgment within Cloud Computing Fundamentals.</p>
+        <h4>Requirements</h4>
+        <ul><li>Use course terminology accurately and define all important ideas in context.</li><li>Include at least one worked example, trace, diagram, sketch, or implementation artifact.</li><li>Conclude with a short reflection on trade-offs, limitations, or next improvements.</li></ul>
+        <p><strong>Deliverables:</strong> A submission package containing a written explanation, the supporting artifact, and a short reflection section.</p>
+        <p><strong>Evaluation Criteria:</strong> Accuracy, completeness, relevance of examples, clarity of communication, and evidence of thoughtful reasoning.</p>
+      </article>
+    </div>
+    <div class="section-header" id="quiz"><span class="section-badge">08</span><div><h2>Quiz Section</h2><p>Twenty multiple-choice questions check both concept recognition and practical judgment.</p></div></div>
+    <div class="stack-lg">
+      <div class="grid two-col">
+        <article class="card quiz-card">
+          <h3>Q1. In Cloud Computing Fundamentals, what is the main value of cloud computing models and business value?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q2. Which situation best demonstrates cloud computing models and business value in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q3. In Cloud Computing Fundamentals, what is the main value of public, private, and hybrid deployment options?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q4. Which situation best demonstrates public, private, and hybrid deployment options in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q5. In Cloud Computing Fundamentals, what is the main value of virtual machines and isolation concepts?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q6. Which situation best demonstrates virtual machines and isolation concepts in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q7. In Cloud Computing Fundamentals, what is the main value of containers and lightweight packaging?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q8. Which situation best demonstrates containers and lightweight packaging in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q9. In Cloud Computing Fundamentals, what is the main value of cloud storage and managed databases?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q10. Which situation best demonstrates cloud storage and managed databases in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q11. In Cloud Computing Fundamentals, what is the main value of networking in cloud environments?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q12. Which situation best demonstrates networking in cloud environments in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q13. In Cloud Computing Fundamentals, what is the main value of serverless computing and event-driven execution?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q14. Which situation best demonstrates serverless computing and event-driven execution in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q15. In Cloud Computing Fundamentals, what is the main value of identity, access, and cloud security basics?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It supports clearer decisions about correctness, efficiency, or usability</li><li>It guarantees that users will never make mistakes</li><li>It eliminates the need for domain knowledge</li><li>It matters only in exam settings</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q16. Which situation best demonstrates identity, access, and cloud security basics in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q17. In Cloud Computing Fundamentals, what is the main value of cost management and operational visibility?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It provides a structured way to reason about the problem</li><li>It removes the need for testing or validation</li><li>It guarantees the cheapest implementation in every case</li><li>It only matters after deployment</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q18. Which situation best demonstrates cost management and operational visibility in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q19. In Cloud Computing Fundamentals, what is the main value of comparing aws, azure, and google cloud offerings?</h3>
+          <ol class="quiz-options quiz-alpha"><li>A team uses it to justify a design or implementation choice</li><li>A team ignores constraints and hopes the result works</li><li>A team treats every problem as identical</li><li>A team skips documentation entirely</li></ol>
+        </article>
+      
+        <article class="card quiz-card">
+          <h3>Q20. Which situation best demonstrates comparing aws, azure, and google cloud offerings in practice?</h3>
+          <ol class="quiz-options quiz-alpha"><li>It helps connect theory to measurable system behavior</li><li>It is mainly a branding decision</li><li>It replaces collaboration with automation</li><li>It prevents all future changes</li></ol>
+        </article>
+      </div>
+      <article class="card answer-key">
+        <h3>Answer Key with Explanations</h3>
+        <div class="stack-md"><p><strong>Q1:</strong> A — Cloud computing models and business value matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q2:</strong> A — A realistic use of cloud computing models and business value involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q3:</strong> A — Public, private, and hybrid deployment options matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q4:</strong> A — A realistic use of public, private, and hybrid deployment options involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q5:</strong> A — Virtual machines and isolation concepts matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q6:</strong> A — A realistic use of virtual machines and isolation concepts involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q7:</strong> A — Containers and lightweight packaging matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q8:</strong> A — A realistic use of containers and lightweight packaging involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q9:</strong> A — Cloud storage and managed databases matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q10:</strong> A — A realistic use of cloud storage and managed databases involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q11:</strong> A — Networking in cloud environments matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q12:</strong> A — A realistic use of networking in cloud environments involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q13:</strong> A — Serverless computing and event-driven execution matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q14:</strong> A — A realistic use of serverless computing and event-driven execution involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q15:</strong> A — Identity, access, and cloud security basics matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q16:</strong> A — A realistic use of identity, access, and cloud security basics involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q17:</strong> A — Cost management and operational visibility matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q18:</strong> A — A realistic use of cost management and operational visibility involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p><p><strong>Q19:</strong> A — Comparing AWS, Azure, and Google Cloud offerings matters because it provides a structured way to reason about system behavior, decisions, or outcomes instead of relying on guesswork.</p><p><strong>Q20:</strong> A — A realistic use of comparing aws, azure, and google cloud offerings involves making, justifying, or validating a computing decision in context rather than skipping analysis.</p></div>
+      </article>
+    </div>
+    <div class="section-header" id="final-project"><span class="section-badge">09</span><div><h2>Final Project or Assessment</h2><p>This culminating task asks the learner to demonstrate integrated understanding rather than isolated recall.</p></div></div>
+    <article class="card">
+      <p><strong>Project Objective:</strong> Synthesize the most important ideas from Cloud Computing Fundamentals into one coherent, evidence-based artifact.</p>
+      <p><strong>Scenario:</strong> You are advising a small team that needs to apply cloud computing fundamentals to a realistic problem with clear constraints and measurable outcomes.</p>
+      <h3>Requirements</h3>
+      <ul><li>Use at least three major topics from the course and explain why each one matters.</li><li>Create a concrete artifact such as a program, design, model, report, experiment, or architecture proposal.</li><li>Include testing, evaluation, or reflection criteria so quality can be judged transparently.</li><li>Document assumptions, trade-offs, and future improvements.</li></ul>
+      <h3>Step-by-Step Build Plan</h3>
+      <ol><li>Choose a realistic problem statement and define what success looks like.</li><li>Break the work into milestones tied to specific course concepts.</li><li>Build and review the core artifact iteratively rather than all at once.</li><li>Evaluate the result with evidence such as tests, traces, feedback, or metrics.</li><li>Package the final deliverable with documentation and a presentation-ready summary.</li></ol>
+      <p><strong>Deliverables:</strong> A final artifact, short technical report, demonstration summary, and evaluation evidence for Cloud Computing Fundamentals.</p>
+      <h3>Rubric</h3>
+      <ul><li>Problem framing and relevance</li><li>Correct use of course concepts</li><li>Technical quality or analytical rigor</li><li>Documentation and communication clarity</li><li>Reflection, testing, and improvement planning</li></ul>
+    </article>
+    <div class="section-header" id="summary"><span class="section-badge">10</span><div><h2>Summary</h2><p>Close the loop by reviewing what you learned, what to study next, and how this course connects forward.</p></div></div>
+    <article class="card">
+      <p>Cloud Computing Fundamentals helps learners build durable skill in cloud and distributed systems. Across the semester, the course moves from first-principles understanding into applied reasoning, structured practice, and more confident decision-making.</p>
+      <p><strong>What to study next:</strong> Revisit your weakest module, rebuild one example from memory, then extend it with a new constraint such as scale, security, cost, usability, or uncertainty.</p>
+      <p><strong>Connection to future semesters:</strong> This course supports later work such as Distributed Systems, DevOps and Software Deployment, Internet of Things. Treat your notes, assignments, and project artifacts here as reusable building blocks rather than one-time submissions.</p>
+    </article>
+    <div class="section-header" id="references"><span class="section-badge">11</span><div><h2>References and Further Study</h2><p>These are real public resources and established books that can support self-paced study beyond the course page.</p></div></div>
+    <div class="grid two-col">
+      <article class="card">
+        <h3>Recommended Books</h3>
+        <ul><li>Cloud Computing Concepts, Technology &amp; Architecture by Thomas Erl</li><li>Designing Data-Intensive Applications by Martin Kleppmann</li></ul>
+      </article>
+      <article class="card">
+        <h3>Websites and Documentation</h3>
+        <ul><li><a href="https://docs.docker.com/" target="_blank" rel="noreferrer">Docker Documentation</a></li><li><a href="https://kubernetes.io/docs/home/" target="_blank" rel="noreferrer">Kubernetes Documentation</a></li><li><a href="https://aws.amazon.com/training/" target="_blank" rel="noreferrer">AWS Training and Certification</a></li></ul>
+        <h4>Practice Platforms</h4>
+        <ul><li><a href="https://learn.microsoft.com/azure/architecture/" target="_blank" rel="noreferrer">Azure Architecture Center</a></li><li><a href="https://cloud.google.com/architecture" target="_blank" rel="noreferrer">Google Cloud Architecture Center</a></li></ul>
+      </article>
+    </div>
+    <section class="card nav-footer">
+      <h3>Course Navigation</h3>
+      <div class="footer-links">
+        <a class="button button-secondary" href="../index.html">Program Home</a>
+        <a class="button button-secondary" href="index.html">Semester Overview</a>
+        <a class="button button-secondary" href="distributed-systems.html">← Distributed Systems</a>
+        <a class="button" href="mobile-application-development.html">Mobile Application Development →</a>
+      </div>
+    </section></section>
+    </div>
+  </main>
+  <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+  <script src="../script.js"></script>
+</body>
+</html>
